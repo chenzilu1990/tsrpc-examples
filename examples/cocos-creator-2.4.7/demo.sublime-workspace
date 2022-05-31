@@ -1,0 +1,1832 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sp",
+				"Sprite"
+			],
+			[
+				"res",
+				"resType"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"ins",
+				"instanceof"
+			],
+			[
+				"BM",
+				"BitmapFont"
+			],
+			[
+				"na",
+				"nameLabel"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"co",
+				"continue"
+			],
+			[
+				"te",
+				"Texture2D"
+			],
+			[
+				"ho",
+				"HOME_WALL1"
+			],
+			[
+				"di",
+				"distance"
+			],
+			[
+				"Ma",
+				"Math"
+			],
+			[
+				"ma",
+				"Math"
+			],
+			[
+				"_roa",
+				"_roadSeeker"
+			],
+			[
+				"lan",
+				"LandNode"
+			],
+			[
+				"vi",
+				"visibleRect"
+			],
+			[
+				"cons",
+				"const"
+			],
+			[
+				"Ev",
+				"EventManager"
+			],
+			[
+				"an",
+				"anchorY"
+			],
+			[
+				"get",
+				"getPixelByDerect"
+			],
+			[
+				"v",
+				"Vec2"
+			],
+			[
+				"No",
+				"NodeType"
+			],
+			[
+				"nu",
+				"number"
+			],
+			[
+				"la",
+				"LandNode"
+			],
+			[
+				"iy",
+				"iy2"
+			],
+			[
+				"jx",
+				"jx2"
+			],
+			[
+				"ce",
+				"centerY"
+			],
+			[
+				"le",
+				"let"
+			],
+			[
+				"px",
+				"px1"
+			],
+			[
+				"add",
+				"addedImg"
+			],
+			[
+				"_dic",
+				"_sliceImgDic"
+			],
+			[
+				"balc",
+				"accountGoldBalance"
+			],
+			[
+				"Node",
+				"NodeType"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"sho",
+				"showConfirm"
+			],
+			[
+				"vuer",
+				"VueManager"
+			],
+			[
+				"pre",
+				"progress"
+			],
+			[
+				"no",
+				"now"
+			],
+			[
+				"Del",
+				"DELAY"
+			],
+			[
+				"pa",
+				"parse"
+			],
+			[
+				"r",
+				"res"
+			],
+			[
+				"Ite",
+				"ItemType"
+			],
+			[
+				"sel",
+				"selType"
+			],
+			[
+				"tye",
+				"type"
+			],
+			[
+				"Item",
+				"ItemType"
+			],
+			[
+				"js",
+				"JSON"
+			],
+			[
+				"Js",
+				"JSON"
+			],
+			[
+				"Hand",
+				"HandlerManager"
+			],
+			[
+				"startP",
+				"startPlant"
+			],
+			[
+				"pr",
+				"private"
+			],
+			[
+				"ti",
+				"time2"
+			],
+			[
+				"ba",
+				"balanceTime"
+			],
+			[
+				"La",
+				"Label"
+			],
+			[
+				"land",
+				"landNode"
+			],
+			[
+				"Plan",
+				"PlantPage"
+			],
+			[
+				"Pal",
+				"PlantPage"
+			],
+			[
+				"sta",
+				"startPlanting"
+			],
+			[
+				"ite",
+				"ItemType"
+			],
+			[
+				"see",
+				"SEED"
+			],
+			[
+				"fo",
+				"for"
+			],
+			[
+				"ne",
+				"new"
+			],
+			[
+				"bu",
+				"build"
+			],
+			[
+				"ex",
+				"extends"
+			],
+			[
+				"ca",
+				"cardName"
+			],
+			[
+				"Car",
+				"CardType"
+			],
+			[
+				"_ro",
+				"_roleName"
+			],
+			[
+				"role",
+				"roleName"
+			],
+			[
+				"ro",
+				"road"
+			],
+			[
+				"map",
+				"MapRoadUtils"
+			],
+			[
+				"Map",
+				"MapRoadUtils"
+			],
+			[
+				"Cha",
+				"Charactor"
+			],
+			[
+				"sce",
+				"sceneMap"
+			],
+			[
+				"Sc",
+				"SceneMap"
+			],
+			[
+				"getpix",
+				"getPixelByWorldPoint"
+			],
+			[
+				"Ro",
+				"MapRoadUtils"
+			],
+			[
+				"addPre",
+				"addPrefabToNode"
+			],
+			[
+				"ene",
+				"entityLayer"
+			],
+			[
+				"addp",
+				"addPrefabToNode"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"play",
+				"playerActiveLoad"
+			],
+			[
+				"repea",
+				"repeatForever"
+			],
+			[
+				"repe",
+				"repeatForever"
+			],
+			[
+				"squ",
+				"sequence"
+			],
+			[
+				"run",
+				"runAction"
+			],
+			[
+				"a",
+				"action"
+			],
+			[
+				"t",
+				"cc.Tween"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"CA",
+				"CardLayer"
+			],
+			[
+				"sh",
+				"show"
+			],
+			[
+				"pso",
+				"postMsg"
+			],
+			[
+				"Vu",
+				"VueManager"
+			],
+			[
+				"_hal",
+				"_halfNodeHeight"
+			],
+			[
+				"_ha",
+				"_halfNodeWidth"
+			],
+			[
+				"getNo",
+				"getNodeByPixel"
+			],
+			[
+				"playera",
+				"playerActiveLoadInfo"
+			],
+			[
+				"mov",
+				"movePlayerToRoadNode"
+			],
+			[
+				"ta",
+				"targetX"
+			],
+			[
+				"lin",
+				"lineToPixel"
+			],
+			[
+				"Nod",
+				"NodeBase"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"par",
+				"parse"
+			],
+			[
+				"targe",
+				"target"
+			],
+			[
+				"mo",
+				"moving"
+			],
+			[
+				"ini",
+				"init"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"tr",
+				"targetX"
+			],
+			[
+				"_",
+				"_dx"
+			],
+			[
+				"loca",
+				"locationLabel"
+			],
+			[
+				"ty",
+				"type"
+			],
+			[
+				"nam",
+				"nameLabel"
+			],
+			[
+				"Loa",
+				"Load"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"is",
+				"isBrowser"
+			],
+			[
+				"inde",
+				"index"
+			],
+			[
+				"p",
+				"px1"
+			],
+			[
+				"1",
+				"13140"
+			],
+			[
+				"loadsli",
+				"loadSliceImage"
+			],
+			[
+				"loa",
+				"location"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"consl",
+				"console.log"
+			],
+			[
+				"er",
+				"err"
+			],
+			[
+				"n",
+				"node"
+			],
+			[
+				"Mat",
+				"MathTools"
+			],
+			[
+				"cn",
+				"config"
+			],
+			[
+				"cof",
+				"config"
+			],
+			[
+				"SH",
+				"SHOW_AD"
+			],
+			[
+				"laba",
+				"labAdown"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"forma",
+				"LSP Development: Parse VSCode Package JSON From Clipboard"
+			],
+			[
+				"for",
+				"LSP: Format File"
+			],
+			[
+				"diff",
+				"Diff View: Review last diff"
+			],
+			[
+				"gitdiff",
+				"Git: Diff All Files"
+			],
+			[
+				"gith",
+				"Github: Blame"
+			],
+			[
+				"githi",
+				"Github: History"
+			],
+			[
+				"format",
+				"TypeScript: Format Document"
+			],
+			[
+				"json",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"di",
+				"Git: Diff Current File"
+			],
+			[
+				"fo",
+				"Format: Javascript"
+			],
+			[
+				"che",
+				"Git: Checkout Current File"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"dif",
+				"Git: Diff Current File"
+			],
+			[
+				"ch",
+				"Git: Checkout Current File"
+			],
+			[
+				"ssja",
+				"Set Syntax: Java"
+			],
+			[
+				"formt",
+				"Format: Javascript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"f",
+				"Format: Javascript"
+			],
+			[
+				"formeat",
+				"TypeScript: Format Selection"
+			],
+			[
+				"insat",
+				"Package Control: Install Package"
+			],
+			[
+				"ssty",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"cocosjs",
+				"Build With: cocosjs"
+			],
+			[
+				"ssc",
+				"Set Syntax: C++"
+			],
+			[
+				"setsyc",
+				"Set Syntax: C"
+			],
+			[
+				"git l",
+				"Git: Log Current File"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"git lo",
+				"Git: Log Current File"
+			],
+			[
+				"git his",
+				"Git: Commit history"
+			],
+			[
+				"sstc",
+				"Set Syntax: C"
+			],
+			[
+				"sstyc",
+				"Set Syntax: C"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"git che",
+				"Git: Checkout Current File"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"sstyt",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"sty",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"afile",
+				"Preferences: A File Icon Settings"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pace",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Acceleration"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"open res",
+				"SourceTree: Open SourceTree"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"beyonfd",
+				"BeyondCompare: Show Diff"
+			],
+			[
+				"beyond",
+				"BeyondCompare: Show Diff"
+			],
+			[
+				"git diff",
+				"Git: Diff Tool All"
+			],
+			[
+				"ss",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"svn co",
+				"SVN: Commit…"
+			],
+			[
+				"insata",
+				"Package Control: Install Package"
+			],
+			[
+				"sspt",
+				"Set Syntax: Python"
+			],
+			[
+				"insatl",
+				"Package Control: Install Package"
+			],
+			[
+				"INSATL",
+				"Package Control: Install Package"
+			],
+			[
+				"Package C",
+				"Preferences: Browse Packages"
+			],
+			[
+				"compa",
+				"BeyondCompare: Show Diff"
+			],
+			[
+				"Package Control",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"showdi",
+				"BeyondCompare: Show Diff"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins t",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"package control:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa k",
+				"Package Control: Add Channel"
+			],
+			[
+				"in sa",
+				"Indexing Status"
+			],
+			[
+				"s s t y",
+				"Set Syntax: YAML"
+			],
+			[
+				"t y",
+				"TypeScript: Paste And Format"
+			],
+			[
+				"s s",
+				"Set Syntax: C++"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pains",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"form",
+				"TypeScript: Paste And Format"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"open",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"sshtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"jso",
+				"JsonTree: Show Tree"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ssts",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"typescript",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"ssmark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"git statu\t",
+				"Git: Status"
+			],
+			[
+				"git puh",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git  push",
+				"Git: Push"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git comm\t",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add All"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"vire",
+				"View In Browser"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"s s j s",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sshm",
+				"Set Syntax: HTML"
+			],
+			[
+				"h t m l",
+				"Set Syntax: HTML"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"page",
+				"Package Control: List Packages"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssj",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssr",
+				"Set Syntax: Ruby"
+			]
+		],
+		"width": 428.0
+	},
+	"console":
+	{
+		"height": 199.0,
+		"history":
+		[
+			"clean()",
+			"clean",
+			"clear()",
+			"clear",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"clean",
+			"clear",
+			"clean",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend"
+	],
+	"file_history":
+	[
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/resources/map/SLGMap/data/mapData19.json",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/SceneMap.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/CH/CH.js",
+		"/D/下载/mapData.json",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/Main.ts",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/README.md",
+		"/D/下载/mapData (4).json",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/PlantPage.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/User.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/creator.d.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/List.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/scene/game.fire",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/altlib/base/HandlerLoading.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/altlib/manager/HandlerManager.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/resources/map/RPGMap/data/ResMap.json",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/layer/MapLayer.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/charactor/Charactor.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/charactor/MovieClip.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/THKJ.sublime-project",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/assets/CCRenderTexture.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/utils/label/letter-font.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/utils/dynamic-atlas/manager.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/view/LandView.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/label/index.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/assets/CCTTFFont.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/assets/CCBitmapFont.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/node-activator.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/components/CCRenderComponent.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/assembler.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/components/CCLabel.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/render-flow.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/sprite/2d/radial-filled.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/sprite/2d/mesh.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/sprite/2d/bar-filled.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/sprite/2d/simple.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/sprite/2d/sliced.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/webgl/assemblers/sprite/2d/tiled.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/utils/label/bmfont.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/utils/label/ttf.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/assembler-2d.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/utils/dynamic-atlas/atlas.js",
+		"/C/Users/chenzilu/Desktop/疯狂打群架多人版/README.md",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/road/AstarHoneycombRoadSeeker.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/LandInfoView.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/layer/EntityLayer.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/altlib/manager/EventManager.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/road/IRoadSeeker.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/road/AStarRoadSeeker.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/altlib/Init.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/Font/number2.fnt",
+		"/C/CocosDashboard_1.0.17/resources/.editors/Creator/2.4.8/resources/engine/cocos2d/core/renderer/utils/dynamic-atlas/atlas.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/renderer/canvas/Texture2D.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/engine/cocos2d/core/assets/CCTexture2D.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/THKJ.sublime-workspace",
+		"/C/Users/chenzilu/Desktop/THKJ2/.gitignore",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/road/MapRoadUtils.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/road/RoadNode.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/resources/map/SLGMap/data/mapData12.json",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/model/LandNode.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/TopUI.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/UserInfo.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/altlib/net/WebSocketToGo.js",
+		"/C/Users/chenzilu/Desktop/cocosgame/example/engine/bin/.cache/dev/cocos2d/core/camera/CCCamera.js",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/map/base/MapParams.ts",
+		"/C/Users/chenzilu/Desktop/THKJ2/assets/altlib/base/Sprite.js",
+		"/C/Users/chenzilu/Desktop/cocosgame/example/engine/bin/cocos2d-js-for-preview.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/PlantPage.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/model/LandNode.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/road/RoadNode.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/test.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/TopUI.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/UserInfo.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/User.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/manager/EventManager.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/VueManager.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/SceneMap.ts",
+		"/Users/chenzilu/Desktop/THKJ/creator.d.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/layer/MapLayer.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/base/Alert.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/manager/HandlerManager.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/LandInfoView.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/charactor/Charactor.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/base/Sprite.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/view/LandView.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/model/ItemInfo.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/utils/Date.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/view/IconCell.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/CH/CH.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/AlertView.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/GameConfig.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/Main.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/LandInfo.ts",
+		"/Users/chenzilu/Desktop/THKJ/THKJ.sublime-workspace",
+		"/Users/chenzilu/Desktop/THKJ/THKJ.sublime-project",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/InfoBase.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/manager/PrefabManager.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/layer/EntityLayer.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/road/MapRoadUtils.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/Init.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/road/AstarHoneycombRoadSeeker.ts",
+		"/Users/chenzilu/Desktop/THKJ/jsconfig.json",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/LoadInfo.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/resources/map/SLGMap/data/SLGMap.json",
+		"/Users/chenzilu/Desktop/THKJ/tsconfig.json",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/road/AStarRoadSeeker.ts",
+		"/Users/chenzilu/Desktop/THKJ/engine/cocos2d/core/utils/base-node.js",
+		"/Users/chenzilu/Desktop/THKJ/build/web-mobile/main.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/base/MapLoadModel.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/UILayer.ts",
+		"/Users/chenzilu/Desktop/NewProject/assets/cases/spine/SpineCtrl.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/VueMgr.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/charactor/MovieClip.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/NewScript.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/base/PopBase.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/base/NodeBase.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/manager/HttpManager.js",
+		"/Users/chenzilu/Desktop/THKJ/assets/script/map/base/MapData.ts",
+		"/Users/chenzilu/Desktop/THKJ/assets/altlib/utils/Tools.js",
+		"/Users/chenzilu/Downloads/mapData (1).json",
+		"/Users/chenzilu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4d0373f5a1d44bac71c9d9902d5386f8/Message/MessageTemp/fecab221dd8ae5adbe6ce7cc165472e1/File/SLGMap.json",
+		"/Users/chenzilu/Desktop/THKJ/build/web-mobile/index.html",
+		"/Users/chenzilu/Desktop/THKJ/assets/scene/game.fire",
+		"/Users/chenzilu/Downloads/未命名 (1).json",
+		"/Users/chenzilu/Desktop/THKJ/assets/resources/map/SLGMap/data/未命名 (1).json",
+		"/Users/chenzilu/Desktop/SGZ/assets/script/Main.ts",
+		"/Users/chenzilu/Desktop/SGZ/assets/script/map/road/MapRoadUtils.ts",
+		"/Users/chenzilu/Desktop/SGZ/assets/script/map/road/RoadNode.ts",
+		"/Users/chenzilu/Desktop/SGZ/build/web-mobile/style-mobile.css"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 50.0
+	},
+	"output.find_results":
+	{
+		"height": 144.0
+	},
+	"output.git":
+	{
+		"height": 47.0
+	},
+	"output.language servers":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 132.0
+	},
+	"pinned_build_system": "Packages/User/cocosjs.sublime-build",
+	"project": "demo.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"main",
+				"assets\\script\\Main.ts"
+			],
+			[
+				"CH.",
+				"assets\\script\\CH\\CH.js"
+			],
+			[
+				"scene",
+				"assets\\script\\SceneMap.ts"
+			],
+			[
+				"handman",
+				"assets\\altlib\\manager\\HandlerManager.js"
+			],
+			[
+				"crea",
+				"creator.d.ts"
+			],
+			[
+				"List.",
+				"assets\\script\\List.js"
+			],
+			[
+				"plant",
+				"assets\\script\\PlantPage.ts"
+			],
+			[
+				"game",
+				"assets\\scene\\game.fire"
+			],
+			[
+				"ttf.js",
+				"engine\\cocos2d\\core\\renderer\\utils\\label\\ttf.js"
+			],
+			[
+				"atla",
+				"engine\\cocos2d\\core\\renderer\\utils\\dynamic-atlas\\atlas.js"
+			],
+			[
+				"cre",
+				"creator.d.ts"
+			],
+			[
+				"num",
+				"assets\\Font\\number2.fnt"
+			],
+			[
+				"Texture2D",
+				"engine\\cocos2d\\core\\assets\\CCTexture2D.js"
+			],
+			[
+				"CCRenderTexture",
+				"engine\\cocos2d\\core\\assets\\CCRenderTexture.js"
+			],
+			[
+				"dynamicAtlasManager",
+				"engine\\cocos2d\\core\\renderer\\utils\\dynamic-atlas\\manager.js"
+			],
+			[
+				"maplayer",
+				"assets\\script\\map\\layer\\MapLayer.ts"
+			],
+			[
+				"landin",
+				"THKJ2\\assets\\script\\LandInfoView.ts"
+			],
+			[
+				"maplay",
+				"THKJ2\\assets\\script\\map\\layer\\MapLayer.ts"
+			],
+			[
+				"mapla",
+				"THKJ2\\assets\\script\\map\\layer\\MapLayer.ts"
+			],
+			[
+				"landv",
+				"THKJ2\\assets\\script\\view\\LandView.ts"
+			],
+			[
+				"i",
+				"THKJ2\\assets\\altlib\\Init.js"
+			],
+			[
+				"roa",
+				"THKJ2\\assets\\script\\map\\road\\RoadNode.ts"
+			],
+			[
+				"cha",
+				"THKJ2\\assets\\script\\map\\charactor\\Charactor.ts"
+			],
+			[
+				"roand",
+				"THKJ2\\assets\\script\\map\\road\\RoadNode.ts"
+			],
+			[
+				"maproa",
+				"THKJ2\\assets\\script\\map\\road\\MapRoadUtils.ts"
+			],
+			[
+				"landview",
+				"THKJ2\\assets\\script\\LandInfoView.ts"
+			],
+			[
+				"init",
+				"THKJ2\\assets\\altlib\\Init.js"
+			],
+			[
+				"mapl",
+				"THKJ2\\assets\\script\\map\\layer\\MapLayer.ts"
+			],
+			[
+				"EventManager",
+				"THKJ2\\assets\\altlib\\manager\\EventManager.js"
+			],
+			[
+				"map",
+				"THKJ2\\assets\\script\\map\\layer\\MapLayer.ts"
+			],
+			[
+				"UserInfo",
+				"THKJ2\\assets\\script\\UserInfo.ts"
+			],
+			[
+				"user",
+				"THKJ2\\assets\\script\\User.ts"
+			],
+			[
+				"roadno",
+				"THKJ2\\assets\\script\\map\\road\\RoadNode.ts"
+			],
+			[
+				"landno",
+				"THKJ2\\assets\\script\\model\\LandNode.ts"
+			],
+			[
+				"land",
+				"THKJ2\\assets\\script\\view\\LandView.ts"
+			],
+			[
+				"ladv",
+				"THKJ2\\assets\\script\\view\\LandView.ts"
+			],
+			[
+				"use",
+				"assets/script/User.ts"
+			],
+			[
+				"sce",
+				"assets/script/SceneMap.ts"
+			],
+			[
+				"top",
+				"assets/script/TopUI.ts"
+			],
+			[
+				"us",
+				"assets/script/User.ts"
+			],
+			[
+				"hand",
+				"assets/altlib/manager/HandlerManager.js"
+			],
+			[
+				"ue",
+				"assets/script/User.ts"
+			],
+			[
+				"vuer",
+				"assets/script/VueManager.ts"
+			],
+			[
+				"ver",
+				"assets/script/VueManager.ts"
+			],
+			[
+				"vue",
+				"assets/script/VueManager.ts"
+			],
+			[
+				"dat",
+				"assets/altlib/utils/Date.js"
+			],
+			[
+				"cell",
+				"assets/script/view/IconCell.ts"
+			],
+			[
+				"CH",
+				"assets/script/CH/CH.js"
+			],
+			[
+				"topui",
+				"assets/script/TopUI.ts"
+			],
+			[
+				"Gam",
+				"assets/script/GameConfig.js"
+			],
+			[
+				"ssce",
+				"assets/script/SceneMap.ts"
+			],
+			[
+				"ite",
+				"assets/script/model/ItemInfo.ts"
+			],
+			[
+				"landinf",
+				"assets/script/LandInfoView.ts"
+			],
+			[
+				"landvi",
+				"assets/script/view/LandView.ts"
+			],
+			[
+				"uer",
+				"assets/script/User.ts"
+			],
+			[
+				"u",
+				"assets/script/User.ts"
+			],
+			[
+				"date",
+				"assets/altlib/utils/Date.js"
+			],
+			[
+				"aler",
+				"assets/altlib/base/Alert.js"
+			],
+			[
+				"ladnv",
+				"assets/script/LandInfoView.ts"
+			],
+			[
+				"info",
+				"assets/script/InfoBase.ts"
+			],
+			[
+				"jsc",
+				"jsconfig.json"
+			],
+			[
+				"sl",
+				"assets/resources/map/SLGMap/data/SLGMap.json"
+			],
+			[
+				"load",
+				"assets/script/LoadInfo.ts"
+			],
+			[
+				"ro",
+				"assets/script/map/road/RoadNode.ts"
+			],
+			[
+				"road",
+				"assets/script/map/road/AStarRoadSeeker.ts"
+			],
+			[
+				"ene",
+				"assets/script/map/layer/EntityLayer.ts"
+			],
+			[
+				"loadin",
+				"assets/script/LoadInfo.ts"
+			],
+			[
+				"scem",
+				"assets/script/SceneMap.ts"
+			],
+			[
+				"oad",
+				"assets/script/LoadInfo.ts"
+			],
+			[
+				"mal",
+				"assets/script/map/layer/MapLayer.ts"
+			],
+			[
+				"roadin",
+				"assets/script/LoadInfo.ts"
+			],
+			[
+				"char",
+				"assets/script/map/charactor/Charactor.ts"
+			],
+			[
+				"mov",
+				"assets/script/map/charactor/MovieClip.ts"
+			],
+			[
+				"ini",
+				"assets/altlib/Init.js"
+			],
+			[
+				"Load",
+				"assets/script/LoadInfo.ts"
+			],
+			[
+				"MovieClip",
+				"assets/script/map/charactor/MovieClip.ts"
+			],
+			[
+				"pop",
+				"assets/altlib/base/PopBase.js"
+			],
+			[
+				"SceneMap",
+				"assets/script/SceneMap.ts"
+			],
+			[
+				"NodeBase",
+				"assets/altlib/base/NodeBase.js"
+			],
+			[
+				"http",
+				"assets/altlib/manager/HttpManager.js"
+			],
+			[
+				"Htt",
+				"assets/altlib/manager/HttpManager.js"
+			],
+			[
+				"roadi",
+				"assets/script/LoadInfo.ts"
+			],
+			[
+				"SLG",
+				"assets/resources/map/SLGMap/data/SLGMap.json"
+			],
+			[
+				"too",
+				"assets/altlib/utils/Tools.js"
+			],
+			[
+				"cer",
+				"creator.d.ts"
+			],
+			[
+				"scen",
+				"assets/script/SceneMap.ts"
+			],
+			[
+				"malay",
+				"assets/script/map/layer/MapLayer.ts"
+			],
+			[
+				"inde",
+				"build/web-mobile/index.html"
+			],
+			[
+				"UI",
+				"assets/script/UILayer.ts"
+			],
+			[
+				"mapscene",
+				"temp/quick-scripts/dst/assets/script/SceneMap.js"
+			],
+			[
+				"gam",
+				"assets/config/GameConfig.js"
+			],
+			[
+				"globa",
+				"assets/global/script/Global.js"
+			],
+			[
+				"ott",
+				"assets/Script/page/lotteryPage.js"
+			],
+			[
+				"right",
+				"assets/Script/page/rightPage.js"
+			],
+			[
+				"awardPage",
+				"assets/Script/page/awardPage.js"
+			],
+			[
+				"ma",
+				"assets/altlib/utils/MathTools.js"
+			],
+			[
+				"Nu",
+				"assets/altlib/utils/Number.js"
+			],
+			[
+				"str",
+				"assets/altlib/utils/String.js"
+			],
+			[
+				"lott",
+				"assets/Script/page/lotteryPage.js"
+			],
+			[
+				"wdpa",
+				"assets/Script/page/WDpage.js"
+			],
+			[
+				"keepOnPage",
+				"assets/Script/page/keepOnPage.js"
+			],
+			[
+				"adco",
+				"assets/Script/ADComponent.js"
+			],
+			[
+				"ATInterstitialJSSDK",
+				"assets/AnyThinkAds/ATInterstitialJSSDK.js"
+			],
+			[
+				"DTpa",
+				"assets/Script/page/DTpage.js"
+			],
+			[
+				"task",
+				"assets/GodGuide/task1.js"
+			],
+			[
+				"guide",
+				"assets/GodGuide/LoadGuide.js"
+			],
+			[
+				"guiide",
+				"assets/GodGuide/GodGuide.js"
+			],
+			[
+				"count",
+				"assets/Script/page/countdownRebBagPage.js"
+			],
+			[
+				"Globa",
+				"assets/global/script/Global.js"
+			],
+			[
+				"rightPage",
+				"assets/Script/page/rightPage.js"
+			],
+			[
+				"rewar",
+				"assets/Script/page/rewardPage.js"
+			],
+			[
+				"dt",
+				"assets/Script/page/DTpage.js"
+			],
+			[
+				"wd",
+				"assets/Script/page/WDpage.js"
+			],
+			[
+				"taspa",
+				"assets/Script/page/taskPage.js"
+			],
+			[
+				"wrong",
+				"assets/Script/page/wrongPage.js"
+			],
+			[
+				"righ",
+				"assets/Script/page/rightPage.js"
+			],
+			[
+				"MTp",
+				"assets/MTPWrapper/MTPWrapper.js"
+			],
+			[
+				"DT",
+				"assets/Script/page/DTpage.js"
+			],
+			[
+				"Mtp",
+				"assets/MTPWrapper/MTPWrapper.js"
+			],
+			[
+				"mtp",
+				"assets/MTPWrapper/MTPWrapper.js"
+			],
+			[
+				"an",
+				"assets/AnyThinkAds/Android/ATAndroidNativeJS.js"
+			],
+			[
+				"wx",
+				"assets/altlib/plugin/sns/WxMgr.js"
+			],
+			[
+				"lottery",
+				"assets/Script/page/lotteryPage.js"
+			],
+			[
+				"moneyGetOptPage",
+				"assets/Script/page/moneyGetOptPage.js"
+			],
+			[
+				"lotter",
+				"assets/Script/page/lotteryPage.js"
+			],
+			[
+				"keep",
+				"assets/Script/page/keepOnPage.js"
+			],
+			[
+				"tasklis",
+				"assets/component/TaskListItem.js"
+			],
+			[
+				"dtpa",
+				"assets/Script/page/DTpage.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 304.0,
+		"last_filter": "onl",
+		"selected_items":
+		[
+			[
+				"onl",
+				"onLoad"
+			],
+			[
+				"",
+				"cc"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

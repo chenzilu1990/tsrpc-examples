@@ -22,7 +22,10 @@ import MapParams from "./map/base/MapParams";
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-
+import { BaseWsClient } from 'tsrpc-base-client';
+import { WsClient as WsClientBrowser } from 'tsrpc-browser';
+import { serviceProto, ServiceType } from '../scripts/shared/protocols/serviceProto';
+import { GameManager } from '../scripts/models/GameManager';
 const {ccclass, property} = cc._decorator;
 
 /**
@@ -62,8 +65,26 @@ export default class SceneMap extends cc.Component {
     private _mapParams:MapParams = null;
 
     // LIFE-CYCLE CALLBACKS:
+    client!: BaseWsClient<ServiceType>;
+    gameManager!: GameManager;
+    onLoad () {
 
-    // onLoad () {}
+        this.gameManager = new GameManager();
+                // 监听数据状态事件
+        // 新箭矢发射（仅表现）
+        // this.gameManager.gameSystem.onNewArrow.push(v => { this._onNewArrow(v) });
+
+        // 断线 2 秒后自动重连
+        // this.gameManager.client.flows.postDisconnectFlow.push(v => {
+        //     setTimeout(() => {
+        //         this.gameManager.join();
+        //     }, 2000)
+        //     return v;
+        // });
+
+        this.gameManager.join();
+    }
+
 
     start () {
 
