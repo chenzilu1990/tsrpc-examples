@@ -1,6 +1,7 @@
 import MovieClip from "./MovieClip";
 import RoadNode from "../road/RoadNode";
 import SceneMap from "../../SceneMap";
+import { PlayerState } from "../../../scripts/shared/game/state/PlayerState";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -32,6 +33,10 @@ export enum CharactorState
 export default class Charactor extends cc.Component {
 
     private _movieClip:MovieClip = null;
+    playerId: number;
+    isSelf: boolean = false;
+    playerState: PlayerState;
+    now: number;
 
     public get movieClip():MovieClip
     {
@@ -102,6 +107,7 @@ export default class Charactor extends cc.Component {
 
     }
 
+
     private _alpha: number = 1;
     public get alpha(): number {
         return this._alpha;
@@ -139,6 +145,30 @@ export default class Charactor extends cc.Component {
         this.direction = 0;
         this.state = 3;
 
+    }
+
+    init(state: PlayerState, isSelf: boolean) {
+        this.playerId = state.id;
+        this.isSelf = isSelf;
+        // this.mesh.material!.setProperty('mainTexture', this.isSelf ? this.texSelf : this.texOther);
+    }
+
+    updateState(state: PlayerState, now: number) {
+        this.playerState = state;
+        this.now = now;
+
+        
+        
+        // if (state.dizzyEndTime && state.dizzyEndTime >= now) {
+        //     this.setStatus('dizzy');
+        // }
+        // else {
+        //     if (this._lastAni === 'win') {
+        //         this.setStatus('idle')
+        //     }
+        // }
+
+        // this.isSelf ? this._resetState(state, now) : this._tweenState(state, now);
     }
 
     update (dt) 
@@ -190,7 +220,7 @@ export default class Charactor extends cc.Component {
 
     public setPlayerStateByNode():void
     {
-        var node:RoadNode = this.sceneMap.getMapNodeByPixel(this.node.x,this.node.y);
+        var node:RoadNode = SceneMap.instance.getMapNodeByPixel(this.node.x,this.node.y);
         
         if(node == this._currentNode)
         {

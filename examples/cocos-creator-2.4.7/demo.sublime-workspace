@@ -519,6 +519,834 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "frontend/assets/script/SceneMap.ts",
+			"settings":
+			{
+				"buffer_size": 9107,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAB4IAAAAAAAAHggAAAAAAAADAAAALy8g",
+					"AQAAAAAAAAABAAAALAgAAAAAAAAsCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BgAAACkIAAAAAAAAKggAAAAAAAAAAAAAKggAAAAAAAAuCAAAAAAAAAAAAAAuCAAAAAAAAC8IAAAAAAAAAAAAAC8IAAAAAAAAMwgAAAAAAAAAAAAAKggAAAAAAAAqCAAAAAAAAAQAAAAgICAgKggAAAAAAAAyCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQgAAAAAAAApCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"reindent",
+					null,
+					"AQAAABkIAAAAAAAAHQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQgAAAAAAAAZCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"paste",
+					null,
+					"AQAAAB0IAAAAAAAARAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHQgAAAAAAAAdCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"left_delete",
+					null,
+					"AgAAAB0IAAAAAAAAHQgAAAAAAAAEAAAAICAgIFEIAAAAAAAAUQgAAAAAAAAIAAAAICAgICAgICA",
+					"AQAAAAAAAAABAAAAIQgAAAAAAAAhCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"paste",
+					null,
+					"AQAAAAgFAAAAAAAAVAYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACAUAAAAAAAAIBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAFQGAAAAAAAAVQYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVAYAAAAAAABUBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							[
+								[
+									26,
+									0
+								],
+								[
+									27,
+									0
+								],
+								"",
+								19
+							]
+						]
+					},
+					"AQAAAHcFAAAAAAAAdwUAAAAAAABCAAAAaW1wb3J0IHsgTXNnQ2hhdCB9IGZyb20gJy4uLy4uL3NjcmlwdHMvc2hhcmVkL3Byb3RvY29scy9Nc2dDaGF0JzsK",
+					"AQAAAAAAAAABAAAAuAUAAAAAAAC4BQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					2,
+					"left_delete",
+					null,
+					"AgAAAKMFAAAAAAAAowUAAAAAAAABAAAALqIFAAAAAAAAogUAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAApAUAAAAAAACkBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKIFAAAAAAAAogUAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAAowUAAAAAAACjBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAAM0FAAAAAAAAzQUAAAAAAABDAAAAaW1wb3J0IHsgQ2hhdEJveE1zZ0l0ZW0gfSBmcm9tICcuL0NoYXRCb3hfTXNnSXRlbS9DaGF0Qm94TXNnSXRlbSc7Cg",
+					"AQAAAAAAAAABAAAADwYAAAAAAAAPBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"reindent",
+					null,
+					"AQAAABYJAAAAAAAAHgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFgkAAAAAAAAWCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"paste",
+					null,
+					"AQAAAB4JAAAAAAAAsgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHgkAAAAAAAAeCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					60,
+					2,
+					"left_delete",
+					null,
+					"AgAAACIJAAAAAAAAIgkAAAAAAAAEAAAAICAgIB4JAAAAAAAAHgkAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAAJgkAAAAAAAAmCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"BQAAALAJAAAAAAAAsQkAAAAAAAAAAAAAsQkAAAAAAAC1CQAAAAAAAAAAAAC1CQAAAAAAALYJAAAAAAAAAAAAALYJAAAAAAAAugkAAAAAAAAAAAAAsQkAAAAAAACxCQAAAAAAAAQAAAAgICAg",
+					"AQAAAAAAAAABAAAAsAkAAAAAAACwCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"paste",
+					null,
+					"AQAAALYJAAAAAAAAXgsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtgkAAAAAAAC2CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					70,
+					1,
+					"left_delete",
+					null,
+					"AQAAALYJAAAAAAAAtgkAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAAugkAAAAAAAC6CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					1,
+					"insert",
+					{
+						"characters": "thi"
+					},
+					"AwAAAKoJAAAAAAAAqwkAAAAAAAAAAAAAqwkAAAAAAACsCQAAAAAAAAAAAACsCQAAAAAAAK0JAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqgkAAAAAAACqCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion_item {\"item\":{\"sortText\":\"15\",\"data\":{\"offset\":10,\"file\":\"c:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/script/SceneMap.ts\",\"entryNames\":[\"this\"],\"line\":74},\"kind\":14,\"label\":\"this\"},\"session_name\":\"LSP-typescript\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "this"
+					},
+					"AgAAAKoJAAAAAAAAqgkAAAAAAAADAAAAdGhpqgkAAAAAAACuCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArQkAAAAAAACtCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"insert",
+					{
+						"characters": ".con"
+					},
+					"BAAAAK4JAAAAAAAArwkAAAAAAAAAAAAArwkAAAAAAACwCQAAAAAAAAAAAACwCQAAAAAAALEJAAAAAAAAAAAAALEJAAAAAAAAsgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArgkAAAAAAACuCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					76,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion_item {\"item\":{\"sortText\":\"11\",\"kind\":2,\"insertTextFormat\":2,\"label\":\"connect\",\"data\":{\"offset\":14,\"file\":\"c:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/script/SceneMap.ts\",\"entryNames\":[\"connect\"],\"line\":74},\"commitCharacters\":[\".\",\",\",\"(\"]},\"session_name\":\"LSP-typescript\"}",
+						"format": "command",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "connect"
+					},
+					"AgAAAK8JAAAAAAAArwkAAAAAAAADAAAAY29urwkAAAAAAAC2CQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsgkAAAAAAACyCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					77,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAALYJAAAAAAAAuAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtgkAAAAAAAC2CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAAOUJAAAAAAAA5QkAAAAAAAA3AAAAICAgICAgICB0aGlzLmxhYmVsVGl0bGUuc3RyaW5nID0gYPCfn6EgQ29ubmVjdGluZy4uLmA7Cg",
+					"AQAAAAAAAAABAAAAAQoAAAAAAAABCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAAPgKAAAAAAAA+AoAAAAAAAA6AAAAICAgICAgICB0aGlzLmxhYmVsVGl0bGUuc3RyaW5nID0gJ/Cfn6IgJyArIHRoaXMucm9vbU5hbWU7Cg",
+					"AQAAAAAAAAABAAAAGAsAAAAAAAAYCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					91,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAAC8KAAAAAAAALwoAAAAAAAA6AAAAICAgICAgICAgICAgdGhpcy5sYWJlbFRpdGxlLnN0cmluZyA9IGDwn5S0IERpc2Nvbm5lY3RlZGA7Cg",
+					"AQAAAAAAAAABAAAAWwoAAAAAAABbCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					95,
+					1,
+					"reindent",
+					null,
+					"AQAAAMAKAAAAAAAAyAoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwAoAAAAAAADACgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					96,
+					1,
+					"insert",
+					{
+						"characters": "cc.log"
+					},
+					"BgAAAMgKAAAAAAAAyQoAAAAAAAAAAAAAyQoAAAAAAADKCgAAAAAAAAAAAADKCgAAAAAAAMsKAAAAAAAAAAAAAMsKAAAAAAAAzAoAAAAAAAAAAAAAzAoAAAAAAADNCgAAAAAAAAAAAADNCgAAAAAAAM4KAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyAoAAAAAAADICgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					97,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAM4KAAAAAAAA0AoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzgoAAAAAAADOCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					98,
+					1,
+					"insert",
+					{
+						"characters": "c"
+					},
+					"AQAAAM8KAAAAAAAA0AoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwoAAAAAAADPCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					99,
+					1,
+					"left_delete",
+					null,
+					"AQAAAM8KAAAAAAAAzwoAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAA0AoAAAAAAADQCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					100,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAAM8KAAAAAAAA0QoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwoAAAAAAADPCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					101,
+					1,
+					"insert",
+					{
+						"characters": "co"
+					},
+					"AgAAANAKAAAAAAAA0QoAAAAAAAAAAAAA0QoAAAAAAADSCgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0AoAAAAAAADQCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					102,
+					1,
+					"insert_completion",
+					{
+						"completion": "connect",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "connect"
+					},
+					"AgAAANAKAAAAAAAA0AoAAAAAAAACAAAAY2/QCgAAAAAAANcKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0goAAAAAAADSCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					103,
+					1,
+					"insert",
+					{
+						"characters": "ed="
+					},
+					"AwAAANcKAAAAAAAA2AoAAAAAAAAAAAAA2AoAAAAAAADZCgAAAAAAAAAAAADZCgAAAAAAANoKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1woAAAAAAADXCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					104,
+					1,
+					"insert",
+					{
+						"characters": "======="
+					},
+					"BwAAANoKAAAAAAAA2woAAAAAAAAAAAAA2woAAAAAAADcCgAAAAAAAAAAAADcCgAAAAAAAN0KAAAAAAAAAAAAAN0KAAAAAAAA3goAAAAAAAAAAAAA3goAAAAAAADfCgAAAAAAAAAAAADfCgAAAAAAAOAKAAAAAAAAAAAAAOAKAAAAAAAA4QoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2goAAAAAAADaCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					106,
+					10,
+					"left_delete",
+					null,
+					"CgAAAOAKAAAAAAAA4AoAAAAAAAABAAAAPd8KAAAAAAAA3woAAAAAAAABAAAAPd4KAAAAAAAA3goAAAAAAAABAAAAPd0KAAAAAAAA3QoAAAAAAAABAAAAPdwKAAAAAAAA3AoAAAAAAAABAAAAPdsKAAAAAAAA2woAAAAAAAABAAAAPdoKAAAAAAAA2goAAAAAAAABAAAAPdkKAAAAAAAA2QoAAAAAAAABAAAAPdgKAAAAAAAA2AoAAAAAAAABAAAAZNcKAAAAAAAA1woAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAA4QoAAAAAAADhCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					107,
+					1,
+					"insert",
+					{
+						"characters": " to"
+					},
+					"AwAAANcKAAAAAAAA2AoAAAAAAAAAAAAA2AoAAAAAAADZCgAAAAAAAAAAAADZCgAAAAAAANoKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1woAAAAAAADXCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					108,
+					1,
+					"insert",
+					{
+						"characters": " server"
+					},
+					"BwAAANoKAAAAAAAA2woAAAAAAAAAAAAA2woAAAAAAADcCgAAAAAAAAAAAADcCgAAAAAAAN0KAAAAAAAAAAAAAN0KAAAAAAAA3goAAAAAAAAAAAAA3goAAAAAAADfCgAAAAAAAAAAAADfCgAAAAAAAOAKAAAAAAAAAAAAAOAKAAAAAAAA4QoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2goAAAAAAADaCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					109,
+					1,
+					"insert",
+					{
+						"characters": "==============="
+					},
+					"DwAAAOEKAAAAAAAA4goAAAAAAAAAAAAA4goAAAAAAADjCgAAAAAAAAAAAADjCgAAAAAAAOQKAAAAAAAAAAAAAOQKAAAAAAAA5QoAAAAAAAAAAAAA5QoAAAAAAADmCgAAAAAAAAAAAADmCgAAAAAAAOcKAAAAAAAAAAAAAOcKAAAAAAAA6AoAAAAAAAAAAAAA6AoAAAAAAADpCgAAAAAAAAAAAADpCgAAAAAAAOoKAAAAAAAAAAAAAOoKAAAAAAAA6woAAAAAAAAAAAAA6woAAAAAAADsCgAAAAAAAAAAAADsCgAAAAAAAO0KAAAAAAAAAAAAAO0KAAAAAAAA7goAAAAAAAAAAAAA7goAAAAAAADvCgAAAAAAAAAAAADvCgAAAAAAAPAKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4QoAAAAAAADhCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					121,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAL4JAAAAAAAAvwkAAAAAAAAAAAAAvwkAAAAAAADDCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgkAAAAAAAC+CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					125,
+					1,
+					"paste",
+					null,
+					"AQAAAM0FAAAAAAAADAYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQUAAAAAAADNBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					128,
+					3,
+					"left_delete",
+					null,
+					"BAAAAOwFAAAAAAAA7AUAAAAAAAABAAAAL/0JAAAAAAAA/QkAAAAAAAAEAAAAICAgIOsFAAAAAAAA6wUAAAAAAAABAAAALuoFAAAAAAAA6gUAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAA7QUAAAAAAADtBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					132,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAPQJAAAAAAAA9QkAAAAAAAAAAAAA9QkAAAAAAAD9CQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9AkAAAAAAAD0CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					133,
+					1,
+					"paste",
+					null,
+					"AQAAAP0JAAAAAAAAIgoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/QkAAAAAAAD9CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					139,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							[
+								[
+									68,
+									0
+								],
+								[
+									68,
+									0
+								],
+								"    gameManager: GameManager;\n",
+								120
+							]
+						]
+					},
+					"AQAAAEIJAAAAAAAAYAkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgoAAAAAAAANCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					142,
+					1,
+					"insert",
+					{
+						"characters": "!"
+					},
+					"AQAAAFEJAAAAAAAAUgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUQkAAAAAAABRCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					146,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHEJAAAAAAAAcQkAAAAAAACiAAAAICAgICAgICB0aGlzLmNsaWVudCA9IG5ldyBXc0NsaWVudEJyb3dzZXIoc2VydmljZVByb3RvLCB7CiAgICAgICAgICAgIHNlcnZlcjogJ3dzOi8vMTI3LjAuMC4xOjMwMDAnLAogICAgICAgICAgICBsb2dnZXI6IGNvbnNvbGUKICAgICAgICB9KQogICAgICAgIHRoaXMuY29ubmVjdCgp",
+					"AQAAAAAAAAABAAAAEwoAAAAAAABxCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					160,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAJ8JAAAAAAAAoAkAAAAAAAAAAAAAoAkAAAAAAACoCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnwkAAAAAAACfCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					161,
+					1,
+					"paste",
+					null,
+					"AQAAAKgJAAAAAAAAIgsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqAkAAAAAAACoCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					164,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAANoJAAAAAAAA3QkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wkAAAAAAADnCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					183,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAADYMAAAAAAAAOQwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYAwAAAAAAABgDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					189,
+					2,
+					"left_delete",
+					null,
+					"AgAAAC0LAAAAAAAALQsAAAAAAAA8AQAACiAgICBhc3luYyBjb25uZWN0KCk6IFByb21pc2U8dm9pZD4gewogICAgICAgIGxldCByZXMgPSBhd2FpdCB0aGlzLmNsaWVudC5jb25uZWN0KCk7CiAgICAgICAgaWYgKCFyZXMuaXNTdWNjKSB7CgogICAgICAgICAgICAvLyBSZXRyeSBhZnRlciAyIHNlY29uZHMKICAgICAgICAgICAgYXdhaXQgbmV3IFByb21pc2UocnMgPT4geyBzZXRUaW1lb3V0KHJzLCAyMDAwKSB9KTsKICAgICAgICAgICAgYXdhaXQgdGhpcy5jb25uZWN0KCk7CiAgICAgICAgfQogICAgICAgIC8vIGNjLmxvZygiY29ubmVjdCB0byBzZXJ2ZXI9PT09PT09PT09PT09PT0iKQogICAgfSwLAAAAAAAALAsAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAaQwAAAAAAAAtCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					196,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"DAAAAA0LAAAAAAAAEAsAAAAAAAAAAAAAAAsAAAAAAAADCwAAAAAAAAAAAADqCgAAAAAAAO0KAAAAAAAAAAAAANUKAAAAAAAA2AoAAAAAAAAAAAAArAoAAAAAAACvCgAAAAAAAAAAAACNCgAAAAAAAJAKAAAAAAAAAAAAAEgKAAAAAAAASwoAAAAAAAAAAAAAMQoAAAAAAAA0CgAAAAAAAAAAAADaCQAAAAAAAN0JAAAAAAAAAAAAAMQJAAAAAAAAxwkAAAAAAAAAAAAAqAkAAAAAAACrCQAAAAAAAAAAAAB6CQAAAAAAAH0JAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQsAAAAAAAByCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					198,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"DAAAAC4LAAAAAAAALgsAAAAAAAADAAAALy8gHgsAAAAAAAAeCwAAAAAAAAMAAAAvLyAFCwAAAAAAAAULAAAAAAAAAwAAAC8vIO0KAAAAAAAA7QoAAAAAAAADAAAALy8gwQoAAAAAAADBCgAAAAAAAAMAAAAvLyCfCgAAAAAAAJ8KAAAAAAAAAwAAAC8vIFcKAAAAAAAAVwoAAAAAAAADAAAALy8gPQoAAAAAAAA9CgAAAAAAAAMAAAAvLyDjCQAAAAAAAOMJAAAAAAAAAwAAAC8vIMoJAAAAAAAAygkAAAAAAAADAAAALy8gqwkAAAAAAACrCQAAAAAAAAMAAAAvLyB6CQAAAAAAAHoJAAAAAAAAAwAAAC8vIA",
+					"AQAAAAAAAAABAAAASQsAAAAAAAByCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					203,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"BgAAAAALAAAAAAAAAwsAAAAAAAAAAAAA6goAAAAAAADtCgAAAAAAAAAAAADVCgAAAAAAANgKAAAAAAAAAAAAAKwKAAAAAAAArwoAAAAAAAAAAAAAjQoAAAAAAACQCgAAAAAAAAAAAABICgAAAAAAAEsKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAwsAAAAAAABBCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					207,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAB8LAAAAAAAAIgsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANwsAAAAAAAA3CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					213,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAB8LAAAAAAAAHwsAAAAAAAADAAAALy8g",
+					"AQAAAAAAAAABAAAAOgsAAAAAAAA6CwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "frontend/assets/scripts/models/GameManager.ts",
+			"settings":
+			{
+				"buffer_size": 3925,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": "../"
+					},
+					"AwAAAFcAAAAAAAAAWAAAAAAAAAAAAAAAWAAAAAAAAABZAAAAAAAAAAAAAABZAAAAAAAAAFoAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVwAAAAAAAABXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					3,
+					"left_delete",
+					null,
+					"AwAAAFkAAAAAAAAAWQAAAAAAAAABAAAAL1gAAAAAAAAAWAAAAAAAAAABAAAALlcAAAAAAAAAVwAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAAWgAAAAAAAABaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAKAAAAAAAAAAoQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAoAAAAAAAAACgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKAAAAAAAAAAoAAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAoQAAAAAAAAChAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOYAAAAAAAAA5wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5gAAAAAAAADmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOYAAAAAAAAA5gAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAA5wAAAAAAAADnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAE0DAAAAAAAAUAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWAMAAAAAAABYAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "backend/src/api/ApiJoin.ts",
+			"settings":
+			{
+				"buffer_size": 365,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"AwAAANcAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADZAAAAAAAAAAAAAADZAAAAAAAAANoAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1wAAAAAAAADXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAANoAAAAAAAAARQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2gAAAAAAAADaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"paste",
+					null,
+					"AgAAAKMAAAAAAAAAQgEAAAAAAAAAAAAAQgEAAAAAAABCAQAAAAAAADIAAAAgICAgLy8gVE9ETwogICAgY2FsbC5lcnJvcignQVBJIE5vdCBJbXBsZW1lbnRlZCcpOw",
+					"AQAAAAAAAAABAAAA1QAAAAAAAACjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACAAAAAAAAAAIQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"paste",
+					null,
+					"AQAAACEAAAAAAAAAQwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					2,
+					"left_delete",
+					null,
+					"AgAAAGoBAAAAAAAAagEAAAAAAABrAQAAaW1wb3J0IHsgQXBpQ2FsbFdzIH0gZnJvbSAidHNycGMiOwppbXBvcnQgeyByb29tSW5zdGFuY2UgfSBmcm9tICIuLiI7CmltcG9ydCB7IFJlcUpvaW4sIFJlc0pvaW4gfSBmcm9tICIuLi9zaGFyZWQvcHJvdG9jb2xzL1B0bEpvaW4iOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEFwaUpvaW4oY2FsbDogQXBpQ2FsbFdzPFJlcUpvaW4sIFJlc0pvaW4+KSB7CiAgICBsZXQgcGxheWVySWQgPSByb29tSW5zdGFuY2Uuam9pbihjYWxsLnJlcSwgY2FsbC5jb25uKTsKCiAgICBjYWxsLnN1Y2MoewogICAgICAgIHBsYXllcklkOiBwbGF5ZXJJZCwKICAgICAgICBnYW1lU3RhdGU6IHJvb21JbnN0YW5jZS5nYW1lU3lzdGVtLnN0YXRlCiAgICB9KQp9aQEAAAAAAABpAQAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAA1QIAAAAAAABqAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAD8AAAAAAAAAQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPwAAAAAAAAA/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"left_delete",
+					null,
+					"AQAAAD8AAAAAAAAAPwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"paste",
+					null,
+					"AgAAAKkAAAAAAAAAsgAAAAAAAAAAAAAAsgAAAAAAAACyAAAAAAAAAAcAAABBcGlDYWxs",
+					"AQAAAAAAAAABAAAAqQAAAAAAAACwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"paste",
+					null,
+					"AgAAAAkAAAAAAAAAEgAAAAAAAAAAAAAAEgAAAAAAAAASAAAAAAAAAAcAAABBcGlDYWxs",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAQAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "backend/src/index.ts",
+			"settings":
+			{
+				"buffer_size": 862,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AgAAAAAAAAAAAAAAXgMAAAAAAAAAAAAAXgMAAAAAAABeAwAAAAAAAB0CAABpbXBvcnQgKiBhcyBwYXRoIGZyb20gInBhdGgiOwppbXBvcnQgeyBXc1NlcnZlciB9IGZyb20gInRzcnBjIjsKaW1wb3J0IHsgc2VydmljZVByb3RvIH0gZnJvbSAnLi9zaGFyZWQvcHJvdG9jb2xzL3NlcnZpY2VQcm90byc7CgovLyBDcmVhdGUgdGhlIFNlcnZlcgpleHBvcnQgY29uc3Qgc2VydmVyID0gbmV3IFdzU2VydmVyKHNlcnZpY2VQcm90bywgewogICAgcG9ydDogMzAwMAp9KTsKCi8vIEVudHJ5IGZ1bmN0aW9uCmFzeW5jIGZ1bmN0aW9uIG1haW4oKSB7CiAgICBhd2FpdCBzZXJ2ZXIuYXV0b0ltcGxlbWVudEFwaShwYXRoLnJlc29sdmUoX19kaXJuYW1lLCAnYXBpJykpOwoKICAgIC8vIFRPRE8KICAgIC8vIFByZXBhcmUgc29tZXRoaW5nLi4uIChlLmcuIGNvbm5lY3QgdGhlIGRiKQoKICAgIGF3YWl0IHNlcnZlci5zdGFydCgpOwp9OwoKbWFpbigpLmNhdGNoKGUgPT4gewogICAgLy8gRXhpdCBpZiBhbnkgZXJyb3IgZHVyaW5nIHRoZSBzdGFydHVwCiAgICBzZXJ2ZXIubG9nZ2VyLmVycm9yKGUpOwogICAgcHJvY2Vzcy5leGl0KC0xKTsKfSk7",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AQAAAAEAAAAAAAAAAAAAAB0CAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "backend/src/models/Room.ts",
+			"settings":
+			{
+				"buffer_size": 2689,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAgQoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "frontend/assets/prefabs/ChatBox/ChatBox.ts",
+			"settings":
+			{
+				"buffer_size": 2487,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "backend/src/shared/game/gameConfig.ts",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "backend/tsrpc.config.ts",
+			"settings":
+			{
+				"buffer_size": 1308,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -1022,10 +1850,17 @@
 	"expanded_folders":
 	[
 		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7",
-		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend"
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/api",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/models"
 	],
 	"file_history":
 	[
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/scripts/models/TweenPool.ts",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/node_modules/typescript-formatter/lib/provider/tslintjson.d.ts",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/script/Main.ts",
+		"/C/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/node_modules/inquirer/lib/prompts/checkbox.js",
 		"/C/Users/chenzilu/Desktop/THKJ2/assets/resources/map/SLGMap/data/mapData19.json",
 		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/SceneMap.ts",
 		"/C/Users/chenzilu/Desktop/THKJ2/assets/script/CH/CH.js",
@@ -1149,15 +1984,11 @@
 		"/Users/chenzilu/Desktop/THKJ/build/web-mobile/index.html",
 		"/Users/chenzilu/Desktop/THKJ/assets/scene/game.fire",
 		"/Users/chenzilu/Downloads/未命名 (1).json",
-		"/Users/chenzilu/Desktop/THKJ/assets/resources/map/SLGMap/data/未命名 (1).json",
-		"/Users/chenzilu/Desktop/SGZ/assets/script/Main.ts",
-		"/Users/chenzilu/Desktop/SGZ/assets/script/map/road/MapRoadUtils.ts",
-		"/Users/chenzilu/Desktop/SGZ/assets/script/map/road/RoadNode.ts",
-		"/Users/chenzilu/Desktop/SGZ/build/web-mobile/style-mobile.css"
+		"/Users/chenzilu/Desktop/THKJ/assets/resources/map/SLGMap/data/未命名 (1).json"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
@@ -1171,6 +2002,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"roomInstance",
+			"connect"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1192,6 +2025,472 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "frontend/assets/script/SceneMap.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2837,
+								2837
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/script/SceneMap.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1701.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "frontend/assets/scripts/models/GameManager.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								859,
+								859
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/scripts/models/GameManager.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 76.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "backend/src/api/ApiJoin.ts",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								261,
+								261
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/api/ApiJoin.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "backend/src/index.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								854,
+								854
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/index.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "backend/src/models/Room.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								374,
+								374
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/models/Room.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "backend/src/index.ts",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								862,
+								862
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/index.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "frontend/assets/prefabs/ChatBox/ChatBox.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								971,
+								971
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/frontend/assets/prefabs/ChatBox/ChatBox.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "backend/src/shared/game/gameConfig.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/src/shared/game/gameConfig.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "backend/tsrpc.config.ts",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'/@<",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-typescript"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///C:/Users/chenzilu/Desktop/tsrpc-examples/examples/cocos-creator-2.4.7/backend/tsrpc.config.ts",
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 81.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1201,7 +2500,7 @@
 	},
 	"input":
 	{
-		"height": 44.0
+		"height": 48.0
 	},
 	"layout":
 	{
@@ -1212,11 +2511,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.714398539956,
 			1.0
 		],
 		"rows":
@@ -1276,16 +2582,20 @@
 		"selected_items":
 		[
 			[
+				"gam",
+				"frontend\\assets\\scripts\\models\\GameManager.ts"
+			],
+			[
+				"scene",
+				"frontend\\assets\\script\\SceneMap.ts"
+			],
+			[
 				"main",
-				"assets\\script\\Main.ts"
+				"frontend\\assets\\script\\Main.ts"
 			],
 			[
 				"CH.",
 				"assets\\script\\CH\\CH.js"
-			],
-			[
-				"scene",
-				"assets\\script\\SceneMap.ts"
 			],
 			[
 				"handman",
@@ -1636,10 +2946,6 @@
 				"temp/quick-scripts/dst/assets/script/SceneMap.js"
 			],
 			[
-				"gam",
-				"assets/config/GameConfig.js"
-			],
-			[
 				"globa",
 				"assets/global/script/Global.js"
 			],
@@ -1824,7 +3130,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

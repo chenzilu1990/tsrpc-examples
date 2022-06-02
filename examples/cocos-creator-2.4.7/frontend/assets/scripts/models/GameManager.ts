@@ -10,6 +10,7 @@ import { serviceProto, ServiceType } from "../shared/protocols/serviceProto";
  */
 export class GameManager {
 
+    public static instance:GameManager = null
     client: WsClient<ServiceType>;
     
     gameSystem = new GameSystem();
@@ -45,6 +46,7 @@ export class GameManager {
         }
 
         (window as any).gm = this;
+        GameManager.instance = this
     }
 
     async join(): Promise<void> {
