@@ -24,6 +24,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
+    "version": 2,
     "services": [
         {
             "id": 0,
@@ -97,6 +98,19 @@ export const serviceProto: ServiceProto<ServiceType> = {
                         "target": {
                             "type": "Reference",
                             "target": "../game/GameSystem/PlayerAttack"
+                        },
+                        "keys": [
+                            "playerId"
+                        ],
+                        "type": "Omit"
+                    }
+                },
+                {
+                    "id": 2,
+                    "type": {
+                        "target": {
+                            "type": "Reference",
+                            "target": "../game/GameSystem/PlayerTarget"
                         },
                         "keys": [
                             "playerId"
@@ -200,6 +214,40 @@ export const serviceProto: ServiceProto<ServiceType> = {
                 {
                     "id": 3,
                     "name": "targetTime",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
+        "../game/GameSystem/PlayerTarget": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "type",
+                    "type": {
+                        "type": "Literal",
+                        "literal": "PlayerTarget"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "playerId",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "x",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "y",
                     "type": {
                         "type": "Number"
                     }
@@ -329,6 +377,20 @@ export const serviceProto: ServiceProto<ServiceType> = {
                         "type": "Number"
                     },
                     "optional": true
+                },
+                {
+                    "id": 3,
+                    "name": "targetX",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "targetY",
+                    "type": {
+                        "type": "Number"
+                    }
                 }
             ]
         },
@@ -465,6 +527,13 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "type": {
                         "type": "Reference",
                         "target": "../game/GameSystem/TimePast"
+                    }
+                },
+                {
+                    "id": 5,
+                    "type": {
+                        "type": "Reference",
+                        "target": "../game/GameSystem/PlayerTarget"
                     }
                 }
             ]

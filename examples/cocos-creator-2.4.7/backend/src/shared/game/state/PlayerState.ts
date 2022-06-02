@@ -4,4 +4,6 @@ export interface PlayerState {
     pos: { x: number, y: number },
     // 晕眩结束时间
     dizzyEndTime?: number,
+    targetX:number,
+    targetY:number,
 }

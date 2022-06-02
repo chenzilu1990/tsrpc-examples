@@ -62,10 +62,19 @@ export class GameSystem {
                 this.onNewArrow.forEach(v => v(newArrow));
             }
         }
+        else if (input.type === 'PlayerTarget') {
+            let player = this._state.players.find(v => v.id === input.playerId);
+            if (!player) return
+            player.targetX = input.x;
+            player.targetY = input.y;
+            
+        }
         else if (input.type === 'PlayerJoin') {
             this.state.players.push({
                 id: input.playerId,
-                pos: { ...input.pos }
+                pos: { ...input.pos },
+                targetX:0,
+                targetY:0,
             })
         }
         else if (input.type === 'PlayerLeave') {
@@ -135,9 +144,17 @@ export interface TimePast {
     type: 'TimePast',
     dt: number
 }
+// 时间流逝
+export interface PlayerTarget {
+    type: 'PlayerTarget',
+    playerId: number,
+    x:number,
+    y:number,
+}
 // 输入定义
 export type GameSystemInput = PlayerMove
     | PlayerAttack
     | PlayerJoin
     | PlayerLeave
-    | TimePast;
+    | TimePast
+    | PlayerTarget;
