@@ -37,6 +37,9 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class SceneMap extends cc.Component {
 
+    private targetX:number = 0
+    private targetY:number = 0
+
     @property(cc.Node)
     public layer: cc.Node = null;
 
@@ -228,11 +231,10 @@ export default class SceneMap extends cc.Component {
         this.gameManager.sendClientInput(input)
         // this.movePlayer2(targetX, targetY, this.player)
 
-        let playerStates = this.gameManager.state.players;
-        cc.log(playerStates)
     }
 
     public movePlayer2(targetX: number, targetY: number, player: Charactor) {
+        if (player.targetX == targetX && player.targetY == targetY) return
         var startPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(player.node.x, player.node.y);
         var targetPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(targetX, targetY);
 
@@ -245,6 +247,8 @@ export default class SceneMap extends cc.Component {
         if (roadNodeArr.length > 0) {
             player.walkByRoad(roadNodeArr);
         }
+        player.targetX = targetX
+        player.targetY = targetY
     }
 
     /**
@@ -319,8 +323,8 @@ export default class SceneMap extends cc.Component {
 
             // 根据最新状态，更新 Player 表现组件
             player.updateState(playerState, this.gameManager.state.now);
-
             this.movePlayer2(playerState.targetX, playerState.targetY, player)
+
         }
 
         // Clear left players

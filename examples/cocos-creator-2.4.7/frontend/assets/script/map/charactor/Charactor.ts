@@ -37,6 +37,8 @@ export default class Charactor extends cc.Component {
     isSelf: boolean = false;
     playerState: PlayerState;
     now: number;
+    targetX: number;
+    targetY: number;
 
     public get movieClip():MovieClip
     {

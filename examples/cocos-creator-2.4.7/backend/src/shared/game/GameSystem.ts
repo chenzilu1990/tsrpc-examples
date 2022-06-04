@@ -67,7 +67,6 @@ export class GameSystem {
             if (!player) return
             player.targetX = input.x;
             player.targetY = input.y;
-            
         }
         else if (input.type === 'PlayerJoin') {
             this.state.players.push({
