@@ -30,7 +30,7 @@ export default class Main extends cc.Component {
 
         this.sceneMap.node.active = false;
 
-        this.loadSlicesMap();
+        this.loadSingleMap();
 
     }
 
@@ -40,14 +40,19 @@ export default class Main extends cc.Component {
     protected loadSingleMap()
     {
 
-        var mapName:string = "mapData";
+        // var mapName:string = "mapData";
+        var mapName:string = "1001";
 
         cc.loader.loadRes("map/data/" + mapName,cc.JsonAsset,(error:Error,res:cc.JsonAsset)=>
         {
+            cc.log("gdjk==========")
+            cc.log("gdjk==========")
+            cc.log("gdjk==========111")
             var mapData:MapData = res.json;
 
             cc.loader.loadRes("map/bg/" + mapData.bgName,cc.Texture2D,(error:Error,tex:cc.Texture2D)=>
             {
+            cc.log("gdjk==========1112222222222")
                 this.sceneMap.node.active = true;
                 this.sceneMap.init(mapData,tex,MapLoadModel.single)
             });
