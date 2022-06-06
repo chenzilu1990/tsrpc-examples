@@ -26,33 +26,29 @@ export default class Main extends cc.Component {
 
     start () {
 
-        cc.debug.setDisplayStats(false);
+        cc.debug.setDisplayStats(true);
 
-        this.sceneMap.node.active = false;
+        // this.sceneMap.node.active = false;
 
-        this.loadSingleMap();
+        this.loadSingleMap(1001);
 
     }
 
     /**
      * 加载单张地图
      */
-    protected loadSingleMap()
+    protected loadSingleMap(mapName)
     {
 
         // var mapName:string = "mapData";
-        var mapName:string = "1001";
-
+        // var mapName:string = "1001";
+        this.sceneMap.node.active = false;
         cc.loader.loadRes("map/data/" + mapName,cc.JsonAsset,(error:Error,res:cc.JsonAsset)=>
         {
-            cc.log("gdjk==========")
-            cc.log("gdjk==========")
-            cc.log("gdjk==========111")
             var mapData:MapData = res.json;
 
             cc.loader.loadRes("map/bg/" + mapData.bgName,cc.Texture2D,(error:Error,tex:cc.Texture2D)=>
             {
-            cc.log("gdjk==========1112222222222")
                 this.sceneMap.node.active = true;
                 this.sceneMap.init(mapData,tex,MapLoadModel.single)
             });
@@ -81,4 +77,9 @@ export default class Main extends cc.Component {
         });
     }
     // update (dt) {}
+
+
+    switchMap(){
+        this.loadSingleMap(1001)
+    }
 }

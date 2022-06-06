@@ -98,8 +98,23 @@ export default class SceneMap extends cc.Component {
         this.gameManager.join();
 
         SceneMap.instance = this
+
+        
+
+
+
     }
 
+
+    playBGM(){
+
+        cc.resources.load("map/BGM/" + this._mapParams.name ,cc.AudioClip,(err:Error, clip:cc.AudioClip) =>{
+            cc.log(err,clip)
+            if(err) return
+            cc.audioEngine.playMusic(clip,true)
+
+        })
+    }
 
     start() {
 
@@ -165,6 +180,7 @@ export default class SceneMap extends cc.Component {
         this.node.height = this.mapLayer.height;
 
         this.setViewToPlayer();
+        this.playBGM()
 
     }
 
@@ -328,12 +344,12 @@ export default class SceneMap extends cc.Component {
         }
 
         // Clear left players
-        for (let i = this.enetityLayer.children.length - 1; i > -1; --i) {
-            let player = this.enetityLayer.children[i].getComponent(Charactor)!;
-            if (!this.gameManager.state.players.find(v => v.id === player.playerId)) {
-                player.node.removeFromParent();
-                delete this._playerInstances[player.playerId];
-            }
-        }
+        // for (let i = this.enetityLayer.children.length - 1; i > -1; --i) {
+        //     let player = this.enetityLayer.children[i].getComponent(Charactor)!;
+        //     if (!this.gameManager.state.players.find(v => v.id === player.playerId)) {
+        //         player.node.removeFromParent();
+        //         delete this._playerInstances[player.playerId];
+        //     }
+        // }
     }
 }
