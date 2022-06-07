@@ -37,8 +37,8 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class SceneMap extends cc.Component {
 
-    private targetX:number = 0
-    private targetY:number = 0
+    private targetX: number = 0
+    private targetY: number = 0
 
     @property(cc.Node)
     public layer: cc.Node = null;
@@ -56,10 +56,10 @@ export default class SceneMap extends cc.Component {
     private camera: cc.Camera = null;
 
     @property(cc.Prefab)
-    private prefabPlayer:cc.Prefab
+    private prefabPlayer: cc.Prefab
 
     @property(cc.Node)
-    private enetityLayer:cc.Node = null
+    private enetityLayer: cc.Node = null
 
     @property()
     public isFollowPlayer: boolean = true;
@@ -100,18 +100,20 @@ export default class SceneMap extends cc.Component {
         SceneMap.instance = this
 
         
-
+        var manager = cc.director.getCollisionManager();
+        manager.enabled = true
+        manager.enabledDebugDraw = true
 
 
     }
 
 
-    playBGM(){
+    playBGM() {
 
-        cc.resources.load("map/BGM/" + this._mapParams.name ,cc.AudioClip,(err:Error, clip:cc.AudioClip) =>{
-            cc.log(err,clip)
-            if(err) return
-            cc.audioEngine.playMusic(clip,true)
+        cc.resources.load("map/BGM/" + this._mapParams.name, cc.AudioClip, (err: Error, clip: cc.AudioClip) => {
+            cc.log(err, clip)
+            if (err) return
+            cc.audioEngine.playMusic(clip, true)
 
         })
     }
@@ -239,7 +241,7 @@ export default class SceneMap extends cc.Component {
         * 
         */	
     public movePlayer(targetX: number, targetY: number) {
-        let input:ClientInput = {
+        let input: ClientInput = {
             type: 'PlayerTarget',
             x: targetX,
             y: targetY,
@@ -339,8 +341,13 @@ export default class SceneMap extends cc.Component {
 
             // 根据最新状态，更新 Player 表现组件
             player.updateState(playerState, this.gameManager.state.now);
-            this.movePlayer2(playerState.targetX, playerState.targetY, player)
+            if (playerState.isImmediately){
 
+                player.setTargetPos(playerState.pos.x, playerState.pos.y)
+            } else {
+                
+                this.movePlayer2(playerState.targetX, playerState.targetY, player)
+            }
         }
 
         // Clear left players
@@ -352,4 +359,6 @@ export default class SceneMap extends cc.Component {
         //     }
         // }
     }
+
+
 }

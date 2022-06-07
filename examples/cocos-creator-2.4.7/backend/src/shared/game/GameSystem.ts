@@ -67,6 +67,15 @@ export class GameSystem {
             if (!player) return
             player.targetX = input.x;
             player.targetY = input.y;
+            player.isImmediately = false;
+        }
+        else if (input.type === 'PlayerPos') {
+            let player = this._state.players.find(v => v.id === input.playerId);
+            if (!player) return
+            player.pos.x = input.x;
+            player.pos.y = input.y;
+            player.isImmediately = true;
+
         }
         else if (input.type === 'PlayerJoin') {
             this.state.players.push({
@@ -74,6 +83,7 @@ export class GameSystem {
                 pos: { ...input.pos },
                 targetX:0,
                 targetY:0,
+                isImmediately:false
             })
         }
         else if (input.type === 'PlayerLeave') {
@@ -143,9 +153,16 @@ export interface TimePast {
     type: 'TimePast',
     dt: number
 }
-// 时间流逝
+// 目标位置
 export interface PlayerTarget {
     type: 'PlayerTarget',
+    playerId: number,
+    x:number,
+    y:number,
+}
+// 位置
+export interface PlayerPos {
+    type: 'PlayerPos',
     playerId: number,
     x:number,
     y:number,
@@ -156,4 +173,5 @@ export type GameSystemInput = PlayerMove
     | PlayerJoin
     | PlayerLeave
     | TimePast
-    | PlayerTarget;
+    | PlayerTarget
+    | PlayerPos;

@@ -31,6 +31,11 @@ export enum CharactorState
 
 @ccclass
 export default class Charactor extends cc.Component {
+    setTargetPos(targetX: number, targetY: number) {
+        this.node.x = targetX
+        this.node.y = targetY
+        this.stop()
+    }
 
     private _movieClip:MovieClip = null;
     playerId: number;
@@ -130,7 +135,7 @@ export default class Charactor extends cc.Component {
 
     public moving:boolean = false;
 
-    public moveSpeed:number = 200;
+    public moveSpeed:number = 1000;
 
     private _moveAngle:number = 0;
 

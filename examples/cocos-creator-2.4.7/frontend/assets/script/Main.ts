@@ -16,13 +16,15 @@ const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class Main extends cc.Component {
-
+    static instance: Main = null;
     @property(SceneMap)
     sceneMap: SceneMap = null;
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {}
+    onLoad () {
+        Main.instance = this
+    }
 
     start () {
 
@@ -37,7 +39,7 @@ export default class Main extends cc.Component {
     /**
      * 加载单张地图
      */
-    protected loadSingleMap(mapName)
+    public loadSingleMap(mapName)
     {
 
         // var mapName:string = "mapData";
