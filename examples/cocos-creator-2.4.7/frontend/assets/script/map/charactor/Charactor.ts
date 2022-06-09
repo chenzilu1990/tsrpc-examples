@@ -54,6 +54,9 @@ export default class Charactor extends cc.Component {
         return this._movieClip;
     }
 
+    @property(cc.Label)
+    labName:cc.Label = null
+
 
     private _direction:number = 0;
 
@@ -135,7 +138,7 @@ export default class Charactor extends cc.Component {
 
     public moving:boolean = false;
 
-    public moveSpeed:number = 1000;
+    public moveSpeed:number = 200;
 
     private _moveAngle:number = 0;
 
@@ -157,6 +160,10 @@ export default class Charactor extends cc.Component {
     init(state: PlayerState, isSelf: boolean) {
         this.playerId = state.id;
         this.isSelf = isSelf;
+        this.labName.string = "id:" + state.id + "\n" + "roleID:" + state.roleId
+        if (isSelf) {
+            this.labName.node.color = cc.Color.RED
+        }
         // this.mesh.material!.setProperty('mainTexture', this.isSelf ? this.texSelf : this.texOther);
     }
 
