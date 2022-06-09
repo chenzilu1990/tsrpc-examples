@@ -1166,7 +1166,7 @@
     "enetityLayer": {
       "__id__": 16
     },
-    "isFollowPlayer": true,
+    "isFollowPlayer": false,
     "_id": "11DxM9C/1FnKaTtG4dw0fo"
   },
   {

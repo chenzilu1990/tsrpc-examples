@@ -62,7 +62,7 @@ export default class SceneMap extends cc.Component {
     private enetityLayer: cc.Node = null
 
     @property()
-    public isFollowPlayer: boolean = true;
+    public isFollowPlayer: boolean = false;
 
     private _roadDic: { [key: string]: RoadNode } = {};
 
@@ -80,6 +80,7 @@ export default class SceneMap extends cc.Component {
     client!: BaseWsClient<ServiceType>;
     gameManager!: GameManager;
     static instance: SceneMap = null;
+    isMoveing: any;
     onLoad() {
 
         this.gameManager = new GameManager();
@@ -125,10 +126,53 @@ export default class SceneMap extends cc.Component {
         this.node.x = -cc.winSize.width / 2;
         this.node.y = -cc.winSize.height / 2;
 
-        // this.player.sceneMap = this;
+        this.node.on(cc.Node.EventType.TOUCH_START, (event) => {
+            let now = new Date();
+            event.currentTarget.startClick = now.getTime()
+        }, this);
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onMapTouchMove, this)
         this.node.on(cc.Node.EventType.TOUCH_START, this.onMapMouseDown, this);
+        this.node.on(cc.Node.EventType.TOUCH_CANCEL, () => {
+            this.isMoveing = false
+        }, this)
     }
+    
 
+    // 地图可以拖动
+    public onMapTouchMove(event: cc.Event.EventTouch): void {
+        let now = new Date();
+
+        let del = (now.getTime() - event.currentTarget.startClick)
+
+        if (del >= 50) {
+            this.isMoveing = true
+        }
+
+        let currentTouch = event.getLocation();
+        let preLocation = event.getPreviousLocation()
+        const { x, y } = preLocation
+
+        let targetPos = cc.v2(this.camera.node.x - (currentTouch.x - x), this.camera.node.y - (currentTouch.y - y))
+
+        const { mapWidth, mapHeight } = this._mapParams
+        const { width, height } = cc.winSize
+
+
+        if (targetPos.x >= (mapWidth - width)) {
+            targetPos.x = mapWidth - width
+        } else if (targetPos.x <= 0) {
+            targetPos.x = 0
+        }
+
+        if (targetPos.y >= (mapHeight - height)) {
+            targetPos.y = mapHeight - height
+        } else if (targetPos.y <= 0) {
+            targetPos.y = 0
+        }
+
+        this.camera.node.position = targetPos
+    }
+    
     public init(mapData: MapData, bgTex: cc.Texture2D, mapLoadModel: MapLoadModel = 1) {
  
         //this._mapData = mapData;
@@ -198,6 +242,10 @@ export default class SceneMap extends cc.Component {
 
     nextrRoleId = 1
     public onMapMouseDown(event: cc.Event.EventTouch): void {
+        if (this.isMoveing) {
+            this.isMoveing = false
+            return
+        }
         //var pos = this.node.convertToNodeSpaceAR(event.getLocation());
         var pos = this.camera.node.position.add(event.getLocation());
         let roleId = this.nextrRoleId++
@@ -250,7 +298,7 @@ export default class SceneMap extends cc.Component {
 
     public movePlayer(targetX: number, targetY: number, player: Charactor) {
         if (player.targetX == targetX && player.targetY == targetY) return
-            // cc.log(player.targetX , targetX , player.targetY , targetY)
+        // cc.log(player.targetX , targetX , player.targetY , targetY)
         var startPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(player.node.x, player.node.y);
         var targetPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(targetX, targetY);
 
@@ -340,7 +388,7 @@ export default class SceneMap extends cc.Component {
 
             // 根据最新状态，更新 Player 表现组件
             player.updateState(playerState, this.gameManager.state.now);
-            if (playerState.isImmediately){
+            if (playerState.isImmediately) {
 
                 player.setTargetPos(playerState.pos.x, playerState.pos.y)
             } else {
