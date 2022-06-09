@@ -159,7 +159,7 @@ export default class Charactor extends cc.Component {
     init(state: PlayerState, isSelf: boolean) {
         this.playerId = state.id;
         this.isSelf = isSelf;
-        this.labName.string = 'id:' + state.id
+        this.labName.string = 'id:' + state.id + "\n" + "roleId:" + state.roleId
         if (isSelf) this.labName.node.color = cc.Color.RED
         // this.mesh.material!.setProperty('mainTexture', this.isSelf ? this.texSelf : this.texOther);
     }

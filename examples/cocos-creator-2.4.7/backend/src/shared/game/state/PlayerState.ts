@@ -6,5 +6,6 @@ export interface PlayerState {
     dizzyEndTime?: number,
     targetX:number,
     targetY:number,
-    isImmediately:boolean
+    isImmediately:boolean,
+    roleId:number
 }

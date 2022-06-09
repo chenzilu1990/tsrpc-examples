@@ -67,6 +67,7 @@ export class GameSystem {
             if (!player) return
             player.targetX = input.x;
             player.targetY = input.y;
+            player.roleId = input.roleId
             player.isImmediately = false;
         }
         else if (input.type === 'PlayerPos') {
@@ -83,7 +84,8 @@ export class GameSystem {
                 pos: { ...input.pos },
                 targetX:0,
                 targetY:0,
-                isImmediately:false
+                isImmediately:false,
+                roleId:0
             })
         }
         else if (input.type === 'PlayerLeave') {
@@ -157,6 +159,7 @@ export interface TimePast {
 export interface PlayerTarget {
     type: 'PlayerTarget',
     playerId: number,
+    roleId:number
     x:number,
     y:number,
 }

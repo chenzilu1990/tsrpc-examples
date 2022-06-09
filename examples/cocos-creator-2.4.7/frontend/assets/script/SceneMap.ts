@@ -196,16 +196,14 @@ export default class SceneMap extends cc.Component {
         return node;
     }
 
-    // nextPlayerId = 1
+    nextrRoleId = 1
     public onMapMouseDown(event: cc.Event.EventTouch): void {
         //var pos = this.node.convertToNodeSpaceAR(event.getLocation());
         var pos = this.camera.node.position.add(event.getLocation());
-        // let playerId = this.nextPlayerId++
-        // cc.log(playerId)
-        // this.gameManager.join();
+        let roleId = this.nextrRoleId++
         let input: ClientInput = {
             type: 'PlayerTarget',
-            // roleId,
+            roleId,
             x: pos.x,
             y: pos.y,
         }
@@ -321,14 +319,16 @@ export default class SceneMap extends cc.Component {
     private _updatePlayers() {
         // Update pos
         let playerStates = this.gameManager.state.players;
-        cc.log(playerStates)
+        // cc.log(playerStates)
         for (let playerState of playerStates) {
-            let player = this._playerInstances[playerState.id];
+            // let player = this._playerInstances[playerState.id];
+            let player = this._playerInstances[playerState.roleId];
             // 场景上还没有这个 Player，新建之
             if (!player) {
                 let node = cc.instantiate(this.prefabPlayer);
                 this.enetityLayer.addChild(node);
-                player = this._playerInstances[playerState.id] = node.getComponent(Charactor)!;
+                // player = this._playerInstances[playerState.id] = node.getComponent(Charactor)!;
+                player = this._playerInstances[playerState.roleId] = node.getComponent(Charactor)!;
                 player.init(playerState, playerState.id === this.gameManager.selfPlayerId)
 
                 // 摄像机拍摄自己
