@@ -131,7 +131,7 @@ export default class SceneMap extends cc.Component {
             event.currentTarget.startClick = now.getTime()
         }, this);
         this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onMapTouchMove, this)
-        this.node.on(cc.Node.EventType.TOUCH_START, this.onMapMouseDown, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onMapMouseDown, this);
         this.node.on(cc.Node.EventType.TOUCH_CANCEL, () => {
             this.isMoveing = false
         }, this)
@@ -251,7 +251,7 @@ export default class SceneMap extends cc.Component {
         let roleId = this.nextrRoleId++
         let input: ClientInput = {
             type: 'PlayerTarget',
-            roleId,
+            roleId : this.gameManager.selectRole || roleId,
             x: pos.x,
             y: pos.y,
         }

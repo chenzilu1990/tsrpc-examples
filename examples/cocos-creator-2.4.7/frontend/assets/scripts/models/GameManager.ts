@@ -19,7 +19,7 @@ export class GameManager {
     lastRecvSetverStateTime = 0;
     selfPlayerId: number = -1;
     lastSN = 0;
-
+    selectRole:number = 0
     get state() {
         return this.gameSystem.state;
     }

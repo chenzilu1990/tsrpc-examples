@@ -153,9 +153,13 @@ export default class Charactor extends cc.Component {
         //this.movieClip.stop();
         this.direction = 0;
         this.state = 3;
-
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onMapMouseDown, this);
     }
 
+    onMapMouseDown(){
+        SceneMap.instance.gameManager.selectRole = this.playerState.roleId
+        cc.log(SceneMap.instance.gameManager.selectRole, this.playerState.roleId)
+    }
     init(state: PlayerState, isSelf: boolean) {
         this.playerId = state.id;
         this.isSelf = isSelf;
