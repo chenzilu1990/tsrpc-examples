@@ -81,6 +81,7 @@ export default class AStarRoadSeeker implements IRoadSeeker {
         */		
     public seekPath(startNode:RoadNode,targetNode:RoadNode):Array<RoadNode>
     {
+        // console.trace()
         this._startNode = startNode;
         this._currentNode = startNode;
         this._targetNode = targetNode;
@@ -103,7 +104,7 @@ export default class AStarRoadSeeker implements IRoadSeeker {
         {
             if(step > this.maxStep)
             {
-                console.log("没找到目标计算步骤为：",step);
+                // console.log("没找到目标计算步骤为：",step);
                 return [];
             }
             

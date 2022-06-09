@@ -96,6 +96,8 @@ export default class SceneMap extends cc.Component {
         // });
 
         this.gameManager.join();
+        // this.gameManager.join();
+
 
         SceneMap.instance = this
 
@@ -194,13 +196,20 @@ export default class SceneMap extends cc.Component {
         return node;
     }
 
-
+    // nextPlayerId = 1
     public onMapMouseDown(event: cc.Event.EventTouch): void {
         //var pos = this.node.convertToNodeSpaceAR(event.getLocation());
         var pos = this.camera.node.position.add(event.getLocation());
-
-        this.movePlayer(pos.x, pos.y);
-
+        // let playerId = this.nextPlayerId++
+        // cc.log(playerId)
+        // this.gameManager.join();
+        let input: ClientInput = {
+            type: 'PlayerTarget',
+            // roleId,
+            x: pos.x,
+            y: pos.y,
+        }
+        this.gameManager.sendClientInput(input)
     }
 
     /**
@@ -240,19 +249,10 @@ export default class SceneMap extends cc.Component {
         * @param targetY 移到到的目标点y
         * 
         */	
-    public movePlayer(targetX: number, targetY: number) {
-        let input: ClientInput = {
-            type: 'PlayerTarget',
-            x: targetX,
-            y: targetY,
-        }
-        this.gameManager.sendClientInput(input)
-        // this.movePlayer2(targetX, targetY, this.player)
 
-    }
-
-    public movePlayer2(targetX: number, targetY: number, player: Charactor) {
+    public movePlayer(targetX: number, targetY: number, player: Charactor) {
         if (player.targetX == targetX && player.targetY == targetY) return
+            // cc.log(player.targetX , targetX , player.targetY , targetY)
         var startPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(player.node.x, player.node.y);
         var targetPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(targetX, targetY);
 
@@ -321,18 +321,17 @@ export default class SceneMap extends cc.Component {
     private _updatePlayers() {
         // Update pos
         let playerStates = this.gameManager.state.players;
+        cc.log(playerStates)
         for (let playerState of playerStates) {
             let player = this._playerInstances[playerState.id];
             // 场景上还没有这个 Player，新建之
             if (!player) {
-                cc.log(playerState)
                 let node = cc.instantiate(this.prefabPlayer);
                 this.enetityLayer.addChild(node);
                 player = this._playerInstances[playerState.id] = node.getComponent(Charactor)!;
                 player.init(playerState, playerState.id === this.gameManager.selfPlayerId)
 
                 // 摄像机拍摄自己
-                cc.log(playerState.id, this.gameManager.selfPlayerId)
                 if (playerState.id === this.gameManager.selfPlayerId) {
                     // this.camera.focusTarget = node;
                     this.player = player
@@ -345,8 +344,8 @@ export default class SceneMap extends cc.Component {
 
                 player.setTargetPos(playerState.pos.x, playerState.pos.y)
             } else {
-                
-                this.movePlayer2(playerState.targetX, playerState.targetY, player)
+                // cc.log("=====")
+                this.movePlayer(playerState.targetX, playerState.targetY, player)
             }
         }
 
