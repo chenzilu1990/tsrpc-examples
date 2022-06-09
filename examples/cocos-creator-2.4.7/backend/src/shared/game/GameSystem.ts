@@ -37,6 +37,7 @@ export class GameSystem {
 
     // 应用输入，计算状态变更
     applyInput(input: GameSystemInput) {
+        
         if (input.type === 'PlayerMove') {
             let player = this._state.players.find(v => v.id === input.playerId);
             if (!player) {
@@ -63,7 +64,9 @@ export class GameSystem {
             }
         }
         else if (input.type === 'PlayerTarget') {
+            // console.trace()
             let player = this._state.players.find(v => v.id === input.playerId);
+            // console.log("player====",player)
             if (!player) return
             let role = player.roles.find(v => v.roleId == input.roleId)
             if (!role) {

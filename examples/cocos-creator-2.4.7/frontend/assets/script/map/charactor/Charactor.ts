@@ -172,19 +172,12 @@ export default class Charactor extends cc.Component {
     updateState(state: RoleState, now: number) {
         this.roleState = state;
         this.now = now;
-
         
-        
-        // if (state.dizzyEndTime && state.dizzyEndTime >= now) {
-        //     this.setStatus('dizzy');
-        // }
-        // else {
-        //     if (this._lastAni === 'win') {
-        //         this.setStatus('idle')
-        //     }
-        // }
-
-        // this.isSelf ? this._resetState(state, now) : this._tweenState(state, now);
+        if (state.isImmediately) {
+            this.setTargetPos(state.targetX, state.targetY)
+        } else {
+            SceneMap.instance.movePlayer(state.targetX, state.targetY, this)
+        }
     }
 
     update (dt) 

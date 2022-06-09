@@ -74,7 +74,7 @@ export default class SceneMap extends cc.Component {
 
     private _mapParams: MapParams = null;
 
-    private _playerInstances: { [playerId: number]: Charactor | undefined } = {};
+    private _playerInstances: { [playerId: string]: Charactor | undefined } = {};
 
     // LIFE-CYCLE CALLBACKS:
     client!: BaseWsClient<ServiceType>;
@@ -251,10 +251,11 @@ export default class SceneMap extends cc.Component {
         let roleId = this.nextrRoleId++
         let input: ClientInput = {
             type: 'PlayerTarget',
-            roleId: this.gameManager.selectRole || roleId,
+            // roleId: this.gameManager.selectRole || roleId,
+            roleId: roleId,
             x: pos.x,
             y: pos.y,
-            isAnimation:true
+            isAnimation: false
         }
         this.gameManager.sendClientInput(input)
     }
@@ -353,7 +354,7 @@ export default class SceneMap extends cc.Component {
         this.setViewToPoint(this.player.node.x, this.player.node.y);
     }
 
-
+    tick: number = 0
     update(dt) {
         if (this.isFollowPlayer) {
             if (this.player) {
@@ -362,6 +363,12 @@ export default class SceneMap extends cc.Component {
             }
             //this.camera.node.position = this.player.node.position.sub(cc.v2(cc.winSize.width / 2,cc.winSize.height / 2));
         }
+        
+        if (this.tick < 0.1) {
+            this.tick += dt
+            return
+        }
+        this.tick = 0
         this._updatePlayers();
     }
 
@@ -372,36 +379,32 @@ export default class SceneMap extends cc.Component {
             let roleStates = playerState.roles 
             
             for (let roleState of roleStates) {
-                let player = this._playerInstances[roleState.roleId];
+                // cc.log(playerState)
+                let player = this._playerInstances[playerState.id + "_" + roleState.roleId];
                 
                 // 场景上还没有这个 Player，新建之
                 if (!player) {
+                    // cc.log(playerState)
                     let node = cc.instantiate(this.prefabPlayer);
                     this.enetityLayer.addChild(node);
-                    player = this._playerInstances[roleState.roleId] = node.getComponent(Charactor)!;
+                    player = this._playerInstances[playerState.id + "_" + roleState.roleId] = node.getComponent(Charactor)!;
                     player.init(playerState.id, roleState, playerState.id === this.gameManager.selfPlayerId)
                 }
 
                 // 根据最新状态，更新 Player 表现组件
                 player.updateState(roleState, this.gameManager.state.now);
-                if (roleState.isImmediately) {
-
-                    player.setTargetPos(roleState.targetX, roleState.targetY)
-                } else {
-                    // cc.log("=====")
-                    this.movePlayer(roleState.targetX, roleState.targetY, player)
-                }
+    
+                // Clear left players
+                // for (let i = this.enetityLayer.children.length - 1; i > -1; --i) {
+                //     let player = this.enetityLayer.children[i].getComponent(Charactor)!;
+                //     if (!this.gameManager.state.players.find(v => v.id === player.playerId)) {
+                //         player.node.removeFromParent();
+                //         delete this._playerInstances[playerState.id + "_" + roleState.roleId];
+                //     }
+                // }
             } 
         }
 
-        // Clear left players
-        // for (let i = this.enetityLayer.children.length - 1; i > -1; --i) {
-        //     let player = this.enetityLayer.children[i].getComponent(Charactor)!;
-        //     if (!this.gameManager.state.players.find(v => v.id === player.playerId)) {
-        //         player.node.removeFromParent();
-        //         delete this._playerInstances[player.playerId];
-        //     }
-        // }
     }
 
 
