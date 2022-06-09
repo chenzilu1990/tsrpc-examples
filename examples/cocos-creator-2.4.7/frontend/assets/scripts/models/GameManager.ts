@@ -19,7 +19,8 @@ export class GameManager {
     lastRecvSetverStateTime = 0;
     selfPlayerId: number = -1;
     lastSN = 0;
-
+    nextPlayerId = 1
+    nextRoleId = 1;
     get state() {
         return this.gameSystem.state;
     }
@@ -57,8 +58,10 @@ export class GameManager {
                 return this.join();
             }
         }
-
-        let ret = await this.client.callApi('Join', {});
+        cc.log(this.client)
+        
+        
+        let ret = await this.client.callApi('Join', {playerId:this.nextPlayerId++,roleId:this.nextRoleId++});
 
         if (!ret.isSucc) {
             if (confirm(`加入房间失败\n${ret.err.message}\n是否重试 ?`)) {

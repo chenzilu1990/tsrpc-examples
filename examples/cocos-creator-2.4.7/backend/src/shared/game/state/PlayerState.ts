@@ -1,5 +1,6 @@
 export interface PlayerState {
     id: number,
+    roleId:number,
     // 位置
     pos: { x: number, y: number },
     // 晕眩结束时间

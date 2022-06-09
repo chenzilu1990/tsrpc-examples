@@ -2,7 +2,8 @@ import { GameSystemState } from "../game/GameSystem";
 
 /** 加入房间 */
 export interface ReqJoin {
-
+    playerId:number,
+    roleId: number
 }
 
 export interface ResJoin {

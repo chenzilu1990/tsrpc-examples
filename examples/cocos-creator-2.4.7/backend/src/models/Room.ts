@@ -28,9 +28,11 @@ export class Room {
 
     /** 加入房间 */
     join(req: ReqJoin, conn: WsConnection<ServiceType>) {
+        console.log("playerId===",req.playerId)
         let input: PlayerJoin = {
             type: 'PlayerJoin',
             playerId: this.nextPlayerId++,
+            roleId:req.roleId,
             // 初始位置随机
             pos: {
                 x: Math.random() * 10 - 5,

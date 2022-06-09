@@ -80,10 +80,12 @@ export class GameSystem {
         else if (input.type === 'PlayerJoin') {
             this.state.players.push({
                 id: input.playerId,
+                roleId:1,
                 pos: { ...input.pos },
                 targetX:0,
                 targetY:0,
-                isImmediately:false
+                isImmediately:false,
+                
             })
         }
         else if (input.type === 'PlayerLeave') {
@@ -142,6 +144,7 @@ export interface PlayerAttack {
 export interface PlayerJoin {
     type: 'PlayerJoin',
     playerId: number,
+    roleId:number,
     pos: { x: number, y: number }
 }
 export interface PlayerLeave {
