@@ -65,27 +65,36 @@ export class GameSystem {
         else if (input.type === 'PlayerTarget') {
             let player = this._state.players.find(v => v.id === input.playerId);
             if (!player) return
-            player.targetX = input.x;
-            player.targetY = input.y;
-            player.roleId = input.roleId
-            player.isImmediately = false;
+            let role = player.roles.find(v => v.roleId == input.roleId)
+            if (!role) {
+                role = {
+                    roleId : input.roleId,
+                    targetX : input.x,
+                    targetY : input.y,
+                    isImmediately : input.isAnimation
+                }
+                player.roles.push(role)
+            }
+ 
+            
+            role.targetX = input.x;
+            role.targetY = input.y;
+            role.roleId = input.roleId
+            role.isImmediately = input.isAnimation;
+            
         }
         else if (input.type === 'PlayerPos') {
             let player = this._state.players.find(v => v.id === input.playerId);
             if (!player) return
             player.pos.x = input.x;
             player.pos.y = input.y;
-            player.isImmediately = true;
 
         }
         else if (input.type === 'PlayerJoin') {
             this.state.players.push({
                 id: input.playerId,
                 pos: { ...input.pos },
-                targetX:0,
-                targetY:0,
-                isImmediately:false,
-                roleId:0
+                roles:[]
             })
         }
         else if (input.type === 'PlayerLeave') {
@@ -162,6 +171,7 @@ export interface PlayerTarget {
     roleId:number
     x:number,
     y:number,
+    isAnimation:boolean,
 }
 // 位置
 export interface PlayerPos {

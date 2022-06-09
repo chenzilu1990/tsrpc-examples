@@ -1,7 +1,7 @@
 import MovieClip from "./MovieClip";
 import RoadNode from "../road/RoadNode";
 import SceneMap from "../../SceneMap";
-import { PlayerState } from "../../../scripts/shared/game/state/PlayerState";
+import { PlayerState , RoleState} from "../../../scripts/shared/game/state/PlayerState";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -38,9 +38,9 @@ export default class Charactor extends cc.Component {
     }
 
     private _movieClip:MovieClip = null;
-    playerId: number;
+
     isSelf: boolean = false;
-    playerState: PlayerState;
+    roleState: RoleState;
     now: number;
     targetX: number;
     targetY: number;
@@ -157,19 +157,20 @@ export default class Charactor extends cc.Component {
     }
 
     onMapMouseDown(){
-        SceneMap.instance.gameManager.selectRole = this.playerState.roleId
-        cc.log(SceneMap.instance.gameManager.selectRole, this.playerState.roleId)
+        SceneMap.instance.gameManager.selectRole = this.roleState.roleId
+        cc.log(SceneMap.instance.gameManager.selectRole, this.roleState.roleId)
     }
-    init(state: PlayerState, isSelf: boolean) {
-        this.playerId = state.id;
+    
+    init(playerId:number, state: RoleState, isSelf: boolean) {
+        // this.playerId = state.id;
         this.isSelf = isSelf;
-        this.labName.string = 'id:' + state.id + "\n" + "roleId:" + state.roleId
+        this.labName.string = 'id:' + playerId + "\n" + "roleId:" + state.roleId
         if (isSelf) this.labName.node.color = cc.Color.RED
         // this.mesh.material!.setProperty('mainTexture', this.isSelf ? this.texSelf : this.texOther);
     }
 
-    updateState(state: PlayerState, now: number) {
-        this.playerState = state;
+    updateState(state: RoleState, now: number) {
+        this.roleState = state;
         this.now = now;
 
         

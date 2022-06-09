@@ -114,7 +114,7 @@ export default class SceneMap extends cc.Component {
     playBGM() {
 
         cc.resources.load("map/BGM/" + this._mapParams.name, cc.AudioClip, (err: Error, clip: cc.AudioClip) => {
-            cc.log(err, clip)
+            // cc.log(err, clip)
             if (err) return
             cc.audioEngine.playMusic(clip, true)
 
@@ -251,9 +251,10 @@ export default class SceneMap extends cc.Component {
         let roleId = this.nextrRoleId++
         let input: ClientInput = {
             type: 'PlayerTarget',
-            roleId : this.gameManager.selectRole || roleId,
+            roleId: this.gameManager.selectRole || roleId,
             x: pos.x,
             y: pos.y,
+            isAnimation:true
         }
         this.gameManager.sendClientInput(input)
     }
@@ -367,34 +368,30 @@ export default class SceneMap extends cc.Component {
     private _updatePlayers() {
         // Update pos
         let playerStates = this.gameManager.state.players;
-        // cc.log(playerStates)
         for (let playerState of playerStates) {
-            // let player = this._playerInstances[playerState.id];
-            let player = this._playerInstances[playerState.roleId];
-            // 场景上还没有这个 Player，新建之
-            if (!player) {
-                let node = cc.instantiate(this.prefabPlayer);
-                this.enetityLayer.addChild(node);
-                // player = this._playerInstances[playerState.id] = node.getComponent(Charactor)!;
-                player = this._playerInstances[playerState.roleId] = node.getComponent(Charactor)!;
-                player.init(playerState, playerState.id === this.gameManager.selfPlayerId)
-
-                // 摄像机拍摄自己
-                if (playerState.id === this.gameManager.selfPlayerId) {
-                    // this.camera.focusTarget = node;
-                    this.player = player
+            let roleStates = playerState.roles 
+            
+            for (let roleState of roleStates) {
+                let player = this._playerInstances[roleState.roleId];
+                
+                // 场景上还没有这个 Player，新建之
+                if (!player) {
+                    let node = cc.instantiate(this.prefabPlayer);
+                    this.enetityLayer.addChild(node);
+                    player = this._playerInstances[roleState.roleId] = node.getComponent(Charactor)!;
+                    player.init(playerState.id, roleState, playerState.id === this.gameManager.selfPlayerId)
                 }
-            }
 
-            // 根据最新状态，更新 Player 表现组件
-            player.updateState(playerState, this.gameManager.state.now);
-            if (playerState.isImmediately) {
+                // 根据最新状态，更新 Player 表现组件
+                player.updateState(roleState, this.gameManager.state.now);
+                if (roleState.isImmediately) {
 
-                player.setTargetPos(playerState.pos.x, playerState.pos.y)
-            } else {
-                // cc.log("=====")
-                this.movePlayer(playerState.targetX, playerState.targetY, player)
-            }
+                    player.setTargetPos(roleState.targetX, roleState.targetY)
+                } else {
+                    // cc.log("=====")
+                    this.movePlayer(roleState.targetX, roleState.targetY, player)
+                }
+            } 
         }
 
         // Clear left players

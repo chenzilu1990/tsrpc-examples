@@ -24,7 +24,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
-    "version": 5,
+    "version": 6,
     "services": [
         {
             "id": 0,
@@ -271,6 +271,13 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "type": {
                         "type": "Number"
                     }
+                },
+                {
+                    "id": 5,
+                    "name": "isAnimation",
+                    "type": {
+                        "type": "Boolean"
+                    }
                 }
             ]
         },
@@ -433,31 +440,47 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "optional": true
                 },
                 {
-                    "id": 3,
+                    "id": 7,
+                    "name": "roles",
+                    "type": {
+                        "type": "Array",
+                        "elementType": {
+                            "type": "Reference",
+                            "target": "../game/state/PlayerState/RoleState"
+                        }
+                    }
+                }
+            ]
+        },
+        "../game/state/PlayerState/RoleState": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "roleId",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 1,
                     "name": "targetX",
                     "type": {
                         "type": "Number"
                     }
                 },
                 {
-                    "id": 4,
+                    "id": 2,
                     "name": "targetY",
                     "type": {
                         "type": "Number"
                     }
                 },
                 {
-                    "id": 5,
+                    "id": 3,
                     "name": "isImmediately",
                     "type": {
                         "type": "Boolean"
-                    }
-                },
-                {
-                    "id": 6,
-                    "name": "roleId",
-                    "type": {
-                        "type": "Number"
                     }
                 }
             ]
