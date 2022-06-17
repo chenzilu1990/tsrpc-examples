@@ -14,5 +14,6 @@ export interface RoleState {
     targetX:number,
     targetY:number,
     targetTime:number,
+    startTime:number,
     isImmediately:boolean,
 }

@@ -24,7 +24,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
-    "version": 9,
+    "version": 10,
     "services": [
         {
             "id": 0,
@@ -339,6 +339,13 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "type": {
                         "type": "Number"
                     }
+                },
+                {
+                    "id": 6,
+                    "name": "startTime",
+                    "type": {
+                        "type": "Number"
+                    }
                 }
             ]
         },
@@ -558,6 +565,13 @@ export const serviceProto: ServiceProto<ServiceType> = {
                 {
                     "id": 4,
                     "name": "targetTime",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "startTime",
                     "type": {
                         "type": "Number"
                     }

@@ -179,6 +179,7 @@ export default class Charactor extends cc.Component {
             SceneMap.instance.movePlayer(state.targetX, state.targetY, this)
         }
         this._endTime = state.targetTime
+        this._startTime = state.startTime
     }
 
     update (dt) 
@@ -187,7 +188,7 @@ export default class Charactor extends cc.Component {
         {
             
             let precent = cc.misc.lerp(0,this.pathL,cc.misc.clamp01((Date.now() - this._startTime) / (this._endTime - this._startTime)))
-            
+            // cc.log()
             let index = 0
             for(let i = 0; i < this.pathLs.length; i++){
                 if (precent <= this.pathLs[i]) {
@@ -197,10 +198,11 @@ export default class Charactor extends cc.Component {
             }
             let from = this._roadNodeArr[index-1]
             let to = this._roadNodeArr[index]
+            // if (!to)
             let len = this.pathLs[index] - this.pathLs[index-1]
             
             let precent2 = cc.misc.clamp01((precent-(this.pathLs[index-1])) / len)
-            cc.log(precent,precent2,len,index,this._nodeIndex)
+            // cc.log(precent,precent2,len,index,this._nodeIndex)
             
             let X = cc.misc.lerp(from.px, to.px, precent2)
             let Y = cc.misc.lerp(from.py, to.py, precent2)
@@ -301,7 +303,7 @@ export default class Charactor extends cc.Component {
         let tuple = this.getPathLength(roadNodeArr)
         this.pathL = tuple[0] as number
         this.pathLs = tuple[1] as number[]
-        this._startTime = Date.now()
+        // this._startTime = Date.now()
         // this._endTime = Date.now() + (this.pathL/this.moveSpeed)*1000
         cc.log(this.pathL, this.pathLs)
         

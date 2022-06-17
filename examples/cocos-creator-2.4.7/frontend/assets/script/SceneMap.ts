@@ -154,18 +154,18 @@ export default class SceneMap extends cc.Component {
         
     }
     
-    public getPathLength(roadNodeArr:RoadNode[]){
+    public getPathLength(roadNodeArr: RoadNode[]) {
         let length = 0
-        let lengths:number[] = []
+        let lengths: number[] = []
         lengths.push(0)
-        for (let i = 0;i < roadNodeArr.length -1;i++){
+        for (let i = 0; i < roadNodeArr.length - 1; i++) {
             let from = roadNodeArr[i]
-            let to = roadNodeArr[i+1]
-            let L = Math.sqrt((to.px - from.px)**2 + (to.py - from.py)**2)
+            let to = roadNodeArr[i + 1]
+            let L = Math.sqrt((to.px - from.px) ** 2 + (to.py - from.py) ** 2)
             length += L
             lengths.push(length)
         }
-        return [length,lengths]
+        return [length, lengths]
     }
 
     playBGM() {
@@ -327,13 +327,15 @@ export default class SceneMap extends cc.Component {
             x: to.x,
             y: to.y,
             targetTime: Date.now() + (pathLen / role.moveSpeed) * 1000,
+            startTime:Date.now()
+            
         }
         this.gameManager.sendClientInput(input2)
         
         
     }
 
-    getPath(from, to){
+    getPath(from, to) {
         var startPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(from.x, from.y);
         var targetPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(to.x, to.y);
 
@@ -454,6 +456,24 @@ export default class SceneMap extends cc.Component {
         }
         this.tick = 0
         // this._updatePlayers();
+        this._updateRoles()
+    }
+
+    private _updateRoles() {
+        let roleStates = this.gameManager.state.roles
+        for (let roleState of roleStates) {
+            let role = this._playerInstances[roleState.fromPlayerId + "_" + roleState.roleId];
+            // 已经存在
+            if (!role) {
+                // cc.log(playerState)
+                let node = cc.instantiate(this.prefabPlayer);
+                this.enetityLayer.addChild(node);
+                role = this._playerInstances[roleState.fromPlayerId + "_" + roleState.roleId] = node.getComponent(Charactor)!;
+                role.init(roleState.fromPlayerId, roleState, roleState.fromPlayerId === this.gameManager.selfPlayerId)
+            }
+            // 根据最新状态，更新 Player 表现组件
+            role.updateState(roleState, this.gameManager.state.now);
+        }
     }
 
     private _updatePlayers() {

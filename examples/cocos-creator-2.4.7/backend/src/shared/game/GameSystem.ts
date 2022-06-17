@@ -99,6 +99,7 @@ export class GameSystem {
                 targetX: input.x, 
                 targetY: input.y,
                 targetTime: input.targetTime,
+                startTime: input.startTime,
                 isImmediately: (input.targetTime <= Date.now()),
             };
             this._state.roles.push(newRole);
@@ -212,6 +213,7 @@ export interface PlayerNewRole {
     x: number,
     y: number,
     targetTime: number,
+    startTime: number,
 }
 // 输入定义
 export type GameSystemInput = PlayerMove

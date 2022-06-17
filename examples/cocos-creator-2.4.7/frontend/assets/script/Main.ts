@@ -82,6 +82,7 @@ export default class Main extends cc.Component {
 
 
     switchMap(){
-        this.loadSingleMap(1001)
+        // this.loadSingleMap(1001)
+        cc.log(SceneMap.instance.gameManager.state)
     }
 }
