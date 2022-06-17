@@ -178,7 +178,7 @@ export default class Charactor extends cc.Component {
         } else {
             SceneMap.instance.movePlayer(state.targetX, state.targetY, this)
         }
-        // this._endTime = state.targetTime
+        this._endTime = state.targetTime
     }
 
     update (dt) 
@@ -302,7 +302,7 @@ export default class Charactor extends cc.Component {
         this.pathL = tuple[0] as number
         this.pathLs = tuple[1] as number[]
         this._startTime = Date.now()
-        this._endTime = Date.now() + (this.pathL/this.moveSpeed)*1000
+        // this._endTime = Date.now() + (this.pathL/this.moveSpeed)*1000
         cc.log(this.pathL, this.pathLs)
         
         this._roadNodeArr = roadNodeArr;

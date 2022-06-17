@@ -128,6 +128,45 @@ export default class SceneMap extends cc.Component {
         
         
     }
+    
+    public canMove(startX: number, startY: number, tragetX: number, tragetY: number) {
+        if (startX == tragetX && startY == tragetY) {
+            
+            return false
+        } 
+        if (!this.havePath(startX, startY, tragetX, tragetY)) {
+            
+            return false
+        }
+        return true
+        
+    }
+    
+    public havePath(startX: number, startY: number, tragetX: number, tragetY: number) {
+
+        
+        var startNode: RoadNode = this._roadDic[startX + "_" + startY];
+        var targetNode: RoadNode = this._roadDic[tragetX + "_" + tragetY];
+
+        var roadNodeArr: RoadNode[] = this._roadSeeker.seekPath(startNode, targetNode); //点击到障碍点不会行走
+
+        return roadNodeArr.length > 0
+        
+    }
+    
+    public getPathLength(roadNodeArr:RoadNode[]){
+        let length = 0
+        let lengths:number[] = []
+        lengths.push(0)
+        for (let i = 0;i < roadNodeArr.length -1;i++){
+            let from = roadNodeArr[i]
+            let to = roadNodeArr[i+1]
+            let L = Math.sqrt((to.px - from.px)**2 + (to.py - from.py)**2)
+            length += L
+            lengths.push(length)
+        }
+        return [length,lengths]
+    }
 
     playBGM() {
 
@@ -264,33 +303,46 @@ export default class SceneMap extends cc.Component {
             this.isMoveing = false
             return
         }
-        //var pos = this.node.convertToNodeSpaceAR(event.getLocation());
-        var pos = this.camera.node.position.add(event.getLocation());
-        let roleId = this.nextrRoleId++
-        // let input: ClientInput = {
-        //     type: 'PlayerTarget',
-        //     // roleId: this.gameManager.selectRole || roleId,
-        //     roleId: roleId,
-        //     x: pos.x,
-        //     y: pos.y,
-        //     isAnimation: false
-        // }
-        // this.gameManager.sendClientInput(input)
+        var to = this.camera.node.position.add(event.getLocation());
         
-        let pathLen = 10
+        let role = cc.instantiate(this.prefabPlayer).getComponent(Charactor)
+        
+        var from = cc.instantiate(this.prefabPlayer).position
+        
+        
+        
+        // this.getPathLength()
+        
+        let roleId = this.nextrRoleId++
+        
+        
+
+        
+        let path = this.getPath(from, to)
+        let pathLen = this.getPathLength(path)[0] as number
         let input2: ClientInput = {
             type: 'PlayerNewRole',
             // roleId: this.gameManager.selectRole || roleId,
             roleId: roleId,
-            x: pos.x,
-            y: pos.y,
-            targetTime: Date.now() + pathLen * 10 * 1000,
+            x: to.x,
+            y: to.y,
+            targetTime: Date.now() + (pathLen / role.moveSpeed) * 1000,
         }
         this.gameManager.sendClientInput(input2)
         
         
     }
 
+    getPath(from, to){
+        var startPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(from.x, from.y);
+        var targetPoint: Point = MapRoadUtils.instance.getWorldPointByPixel(to.x, to.y);
+
+        var startNode: RoadNode = this._roadDic[startPoint.x + "_" + startPoint.y];
+        var targetNode: RoadNode = this._roadDic[targetPoint.x + "_" + targetPoint.y];
+
+        var roadNodeArr: RoadNode[] = this._roadSeeker.seekPath(startNode, targetNode); //点击到障碍点不会行走
+        return roadNodeArr
+    }
     /**
      * 视图跟随玩家
      * @param dt 
