@@ -24,7 +24,7 @@ export interface ServiceType {
 }
 
 export const serviceProto: ServiceProto<ServiceType> = {
-    "version": 6,
+    "version": 9,
     "services": [
         {
             "id": 0,
@@ -111,6 +111,19 @@ export const serviceProto: ServiceProto<ServiceType> = {
                         "target": {
                             "type": "Reference",
                             "target": "../game/GameSystem/PlayerTarget"
+                        },
+                        "keys": [
+                            "playerId"
+                        ],
+                        "type": "Omit"
+                    }
+                },
+                {
+                    "id": 4,
+                    "type": {
+                        "target": {
+                            "type": "Reference",
+                            "target": "../game/GameSystem/PlayerNewRole"
                         },
                         "keys": [
                             "playerId"
@@ -281,6 +294,54 @@ export const serviceProto: ServiceProto<ServiceType> = {
                 }
             ]
         },
+        "../game/GameSystem/PlayerNewRole": {
+            "type": "Interface",
+            "properties": [
+                {
+                    "id": 0,
+                    "name": "type",
+                    "type": {
+                        "type": "Literal",
+                        "literal": "PlayerNewRole"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "playerId",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "roleId",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "x",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "y",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "targetTime",
+                    "type": {
+                        "type": "Number"
+                    }
+                }
+            ]
+        },
         "../game/GameSystem/PlayerPos": {
             "type": "Interface",
             "properties": [
@@ -390,6 +451,17 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     }
                 },
                 {
+                    "id": 4,
+                    "name": "roles",
+                    "type": {
+                        "type": "Array",
+                        "elementType": {
+                            "type": "Reference",
+                            "target": "../game/state/PlayerState/RoleState"
+                        }
+                    }
+                },
+                {
                     "id": 3,
                     "name": "nextArrowId",
                     "type": {
@@ -440,7 +512,7 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "optional": true
                 },
                 {
-                    "id": 7,
+                    "id": 11,
                     "name": "roles",
                     "type": {
                         "type": "Array",
@@ -457,27 +529,41 @@ export const serviceProto: ServiceProto<ServiceType> = {
             "properties": [
                 {
                     "id": 0,
-                    "name": "roleId",
+                    "name": "fromPlayerId",
                     "type": {
                         "type": "Number"
                     }
                 },
                 {
                     "id": 1,
-                    "name": "targetX",
+                    "name": "roleId",
                     "type": {
                         "type": "Number"
                     }
                 },
                 {
                     "id": 2,
-                    "name": "targetY",
+                    "name": "targetX",
                     "type": {
                         "type": "Number"
                     }
                 },
                 {
                     "id": 3,
+                    "name": "targetY",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "targetTime",
+                    "type": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "id": 5,
                     "name": "isImmediately",
                     "type": {
                         "type": "Boolean"
@@ -625,6 +711,13 @@ export const serviceProto: ServiceProto<ServiceType> = {
                     "type": {
                         "type": "Reference",
                         "target": "../game/GameSystem/PlayerTarget"
+                    }
+                },
+                {
+                    "id": 7,
+                    "type": {
+                        "type": "Reference",
+                        "target": "../game/GameSystem/PlayerNewRole"
                     }
                 },
                 {

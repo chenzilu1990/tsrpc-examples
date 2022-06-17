@@ -1,6 +1,6 @@
 import { gameConfig } from "./gameConfig";
 import { ArrowState } from "./state/ArrowState";
-import { PlayerState } from "./state/PlayerState";
+import { PlayerState, RoleState } from "./state/PlayerState";
 
 // 状态定义
 export interface GameSystemState {
@@ -11,6 +11,8 @@ export interface GameSystemState {
     // 飞行中的箭矢
     arrows: ArrowState[],
     // 箭矢的 ID 生成
+    roles: RoleState[],
+    
     nextArrowId: number
 }
 
@@ -24,6 +26,7 @@ export class GameSystem {
         now: 0,
         players: [],
         arrows: [],
+        roles: [],
         nextArrowId: 1
     }
     get state(): Readonly<GameSystemState> {
@@ -63,28 +66,44 @@ export class GameSystem {
                 this.onNewArrow.forEach(v => v(newArrow));
             }
         }
-        else if (input.type === 'PlayerTarget') {
-            // console.trace()
-            let player = this._state.players.find(v => v.id === input.playerId);
-            // console.log("player====",player)
-            if (!player) return
-            let role = player.roles.find(v => v.roleId == input.roleId)
-            if (!role) {
-                role = {
-                    roleId : input.roleId,
-                    targetX : input.x,
-                    targetY : input.y,
-                    isImmediately : input.isAnimation
-                }
-                player.roles.push(role)
-            }
+        // else if (input.type === 'PlayerTarget') {
+        //     // console.trace()
+        //     let player = this._state.players.find(v => v.id === input.playerId);
+        //     // console.log("player====",player)
+        //     if (!player) return
+        //     let role = player.roles.find(v => v.roleId == input.roleId)
+        //     if (!role) {
+        //         role = {
+        //             roleId: input.roleId,
+        //             targetX: input.x,
+        //             targetY: input.y,
+        //             isImmediately: input.isAnimation
+        //         }
+        //         player.roles.push(role)
+        //     }
  
             
-            role.targetX = input.x;
-            role.targetY = input.y;
-            role.roleId = input.roleId
-            role.isImmediately = input.isAnimation;
+        //     role.targetX = input.x;
+        //     role.targetY = input.y;
+        //     role.roleId = input.roleId
+        //     role.isImmediately = input.isAnimation;
             
+        // }
+        else if (input.type === 'PlayerNewRole') {
+            let player = this._state.players.find(v => v.id === input.playerId);
+            if (!player) return
+
+            let newRole: RoleState = {
+                roleId: input.roleId,
+                fromPlayerId: input.playerId,
+                targetX: input.x, 
+                targetY: input.y,
+                targetTime: input.targetTime,
+                isImmediately: (input.targetTime <= Date.now()),
+            };
+            this._state.roles.push(newRole);
+            this.onNewRole.forEach(v => v(newRole));
+
         }
         else if (input.type === 'PlayerPos') {
             let player = this._state.players.find(v => v.id === input.playerId);
@@ -97,7 +116,7 @@ export class GameSystem {
             this.state.players.push({
                 id: input.playerId,
                 pos: { ...input.pos },
-                roles:[]
+                roles: []
             })
         }
         else if (input.type === 'PlayerLeave') {
@@ -136,6 +155,7 @@ export class GameSystem {
     // 发射箭矢
     onNewArrow: ((arrow: ArrowState) => void)[] = [];
 
+    onNewRole: ((role: RoleState) => void)[] = [];
 }
 
 export interface PlayerMove {
@@ -171,17 +191,27 @@ export interface TimePast {
 export interface PlayerTarget {
     type: 'PlayerTarget',
     playerId: number,
-    roleId:number
-    x:number,
-    y:number,
-    isAnimation:boolean,
+    roleId: number
+    x: number,
+    y: number,
+    isAnimation: boolean,
 }
 // 位置
 export interface PlayerPos {
     type: 'PlayerPos',
     playerId: number,
-    x:number,
-    y:number,
+    x: number,
+    y: number,
+}
+
+// 
+export interface PlayerNewRole {
+    type: 'PlayerNewRole',
+    playerId: number,
+    roleId: number
+    x: number,
+    y: number,
+    targetTime: number,
 }
 // 输入定义
 export type GameSystemInput = PlayerMove
@@ -190,4 +220,5 @@ export type GameSystemInput = PlayerMove
     | PlayerLeave
     | TimePast
     | PlayerTarget
+    | PlayerNewRole
     | PlayerPos;

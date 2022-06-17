@@ -8,9 +8,10 @@ import { serviceProto, ServiceType } from './shared/protocols/serviceProto';
 export const server = new WsServer(serviceProto, {
     port: 3000,
     json: true,
-    logLevel:'warn',
-    // logMsg:
-    // logResBody:
+    logLevel:'info',
+    logReqBody: false,
+    logResBody: false,
+    logMsg: false,
 });
 
 // 断开连接后退出房间

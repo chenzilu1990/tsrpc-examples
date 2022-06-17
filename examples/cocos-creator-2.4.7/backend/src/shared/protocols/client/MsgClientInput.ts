@@ -1,4 +1,4 @@
-import { PlayerAttack, PlayerMove, PlayerTarget, PlayerPos } from "../../game/GameSystem";
+import { PlayerAttack, PlayerMove, PlayerTarget, PlayerPos , PlayerNewRole} from "../../game/GameSystem";
 
 /** 发送自己的输入 */
 export interface MsgClientInput {
@@ -6,4 +6,7 @@ export interface MsgClientInput {
     inputs: ClientInput[]
 };
 
-export type ClientInput = Omit<PlayerMove, 'playerId'> | Omit<PlayerAttack, 'playerId'> | Omit<PlayerTarget, 'playerId'> | Omit<PlayerPos, 'playerId'>;
+export type ClientInput = Omit<PlayerMove, 'playerId'> | Omit<PlayerAttack, 'playerId'> 
+| Omit<PlayerTarget, 'playerId'> 
+| Omit<PlayerNewRole, 'playerId'> 
+| Omit<PlayerPos, 'playerId'>;

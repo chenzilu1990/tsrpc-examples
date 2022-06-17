@@ -27,6 +27,7 @@ import { WsClient as WsClientBrowser } from 'tsrpc-browser';
 import { serviceProto, ServiceType } from '../scripts/shared/protocols/serviceProto';
 import { GameManager } from '../scripts/models/GameManager';
 import { ClientInput } from "../scripts/shared/protocols/client/MsgClientInput";
+import { RoleState } from "../scripts/shared/game/state/PlayerState";
 const { ccclass, property } = cc._decorator;
 
 /**
@@ -87,6 +88,7 @@ export default class SceneMap extends cc.Component {
         // 监听数据状态事件
         // 新箭矢发射（仅表现）
         // this.gameManager.gameSystem.onNewArrow.push(v => { this._onNewArrow(v) });
+        this.gameManager.gameSystem.onNewRole.push(v => { this._onNewRole(v) });
 
         // 断线 2 秒后自动重连
         // this.gameManager.client.flows.postDisconnectFlow.push(v => {
@@ -109,7 +111,23 @@ export default class SceneMap extends cc.Component {
 
 
     }
-
+    _onNewRole(roleState: RoleState) {
+        console.trace()
+        cc.log(roleState)
+        let role = this._playerInstances[roleState.fromPlayerId + "_" + roleState.roleId];
+        // 已经存在
+        if (!role) {
+            // cc.log(playerState)
+            let node = cc.instantiate(this.prefabPlayer);
+            this.enetityLayer.addChild(node);
+            role = this._playerInstances[roleState.fromPlayerId + "_" + roleState.roleId] = node.getComponent(Charactor)!;
+            role.init(roleState.fromPlayerId, roleState, roleState.fromPlayerId === this.gameManager.selfPlayerId)
+        }
+        // 根据最新状态，更新 Player 表现组件
+        role.updateState(roleState, this.gameManager.state.now);
+        
+        
+    }
 
     playBGM() {
 
@@ -249,15 +267,28 @@ export default class SceneMap extends cc.Component {
         //var pos = this.node.convertToNodeSpaceAR(event.getLocation());
         var pos = this.camera.node.position.add(event.getLocation());
         let roleId = this.nextrRoleId++
-        let input: ClientInput = {
-            type: 'PlayerTarget',
+        // let input: ClientInput = {
+        //     type: 'PlayerTarget',
+        //     // roleId: this.gameManager.selectRole || roleId,
+        //     roleId: roleId,
+        //     x: pos.x,
+        //     y: pos.y,
+        //     isAnimation: false
+        // }
+        // this.gameManager.sendClientInput(input)
+        
+        let pathLen = 10
+        let input2: ClientInput = {
+            type: 'PlayerNewRole',
             // roleId: this.gameManager.selectRole || roleId,
             roleId: roleId,
             x: pos.x,
             y: pos.y,
-            isAnimation: false
+            targetTime: Date.now() + pathLen * 10 * 1000,
         }
-        this.gameManager.sendClientInput(input)
+        this.gameManager.sendClientInput(input2)
+        
+        
     }
 
     /**
@@ -356,6 +387,7 @@ export default class SceneMap extends cc.Component {
 
     tick: number = 0
     update(dt) {
+        // this.gameManager.localTimePast();
         if (this.isFollowPlayer) {
             if (this.player) {
                 // cc.log("fjksd=======")
@@ -369,7 +401,7 @@ export default class SceneMap extends cc.Component {
             return
         }
         this.tick = 0
-        this._updatePlayers();
+        // this._updatePlayers();
     }
 
     private _updatePlayers() {

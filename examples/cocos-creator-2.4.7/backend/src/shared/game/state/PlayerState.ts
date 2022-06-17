@@ -9,8 +9,10 @@ export interface PlayerState {
 }
 
 export interface RoleState {
+    fromPlayerId:number,
     roleId:number,
     targetX:number,
     targetY:number,
+    targetTime:number,
     isImmediately:boolean,
 }

@@ -178,6 +178,7 @@ export default class Charactor extends cc.Component {
         } else {
             SceneMap.instance.movePlayer(state.targetX, state.targetY, this)
         }
+        // this._endTime = state.targetTime
     }
 
     update (dt) 
