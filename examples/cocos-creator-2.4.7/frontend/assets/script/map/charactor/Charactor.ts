@@ -135,7 +135,7 @@ export default class Charactor extends cc.Component {
 
     public moving:boolean = false;
 
-    public moveSpeed:number = 200;
+    public moveSpeed:number = 100;
 
     private _moveAngle:number = 0;
 
@@ -184,6 +184,28 @@ export default class Charactor extends cc.Component {
     {
         if(this.moving)
         {
+            
+            let precent = cc.misc.lerp(0,this.pathL,cc.misc.clamp01((Date.now() - this._startTime) / (this._endTime - this._startTime)))
+            
+            let index = 0
+            for(let i = 0; i < this.pathLs.length; i++){
+                if (precent <= this.pathLs[i]) {
+                    index = i
+                    break
+                }
+            }
+            let from = this._roadNodeArr[index-1]
+            let to = this._roadNodeArr[index]
+            let len = this.pathLs[index] - this.pathLs[index-1]
+            
+            let precent2 = cc.misc.clamp01((precent-(this.pathLs[index-1])) / len)
+            cc.log(precent,precent2,len,index,this._nodeIndex)
+            
+            let X = cc.misc.lerp(from.px, to.px, precent2)
+            let Y = cc.misc.lerp(from.py, to.py, precent2)
+            
+            this._nodeIndex = index
+            
             var nextNode:RoadNode = this._roadNodeArr[this._nodeIndex];
             var dx:number = nextNode.px - this.node.x;
             var dy:number = nextNode.py - this.node.y;
@@ -203,8 +225,10 @@ export default class Charactor extends cc.Component {
                 var xspeed:number = Math.cos(this._moveAngle) * speed;
                 var yspeed:number = Math.sin(this._moveAngle) * speed;
 
-                this.node.x += xspeed;
-                this.node.y += yspeed;
+                // this.node.x += xspeed;
+                this.node.x = X;
+                // this.node.y += yspeed;
+                this.node.y = Y;
 
             }else
             {
@@ -266,8 +290,20 @@ export default class Charactor extends cc.Component {
      * 根据路节点路径行走
      * @param roadNodeArr 
      */
+    pathL: number;
+    pathLs: number[];
+    _startTime: number;
+    _endTime: number;
     public walkByRoad(roadNodeArr:RoadNode[])
     {
+        
+        let tuple = this.getPathLength(roadNodeArr)
+        this.pathL = tuple[0] as number
+        this.pathLs = tuple[1] as number[]
+        this._startTime = Date.now()
+        this._endTime = Date.now() + (this.pathL/this.moveSpeed)*1000
+        cc.log(this.pathL, this.pathLs)
+        
         this._roadNodeArr = roadNodeArr;
         this._nodeIndex = 0;
         this._moveAngle = 0;
@@ -275,7 +311,21 @@ export default class Charactor extends cc.Component {
         this.walk();
         this.move();
     }
-
+    
+    getPathLength(roadNodeArr:RoadNode[]){
+        let length = 0
+        let lengths:number[] = []
+        lengths.push(0)
+        for (let i = 0;i < roadNodeArr.length -1;i++){
+            let from = roadNodeArr[i]
+            let to = roadNodeArr[i+1]
+            let L = Math.sqrt((to.px - from.px)**2 + (to.py - from.py)**2)
+            length += L
+            lengths.push(length)
+        }
+        return [length,lengths]
+    }
+    
     private walk()
     {
         if(this._nodeIndex < this._roadNodeArr.length - 1)
